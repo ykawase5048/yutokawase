@@ -1,0 +1,42 @@
+{
+    "publications":[
+        {
+            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
+            "journal": "Journal of Pure and Applied Algebra",
+            "doi": "10.1016/j.jpaa.2024.107794",
+            "year": "2025"
+        }
+    ],
+    "preprints":[
+        {
+            "title": "Birkhoff's variety theorem for relative algebraic theories",
+            "date": "April 2023",
+            "arxiv": "https://arxiv.org/abs/2304.04382",
+            "note": ""
+        },
+        {
+            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
+            "date": "September 2023",
+            "arxiv": "https://arxiv.org/abs/2309.05304",
+            "note": ""
+        },
+        {
+            "title": "Relativized universal algebra via partial Horn logic",
+            "date": "January 2024",
+            "arxiv": "https://arxiv.org/abs/2403.19661",
+            "note": "master's thesis"
+        },
+        {
+            "title": "Double categories of profunctors",
+            "date": "April 2025",
+            "arxiv": "https://arxiv.org/abs/2504.11099",
+            "note": ""
+        },
+        {
+            "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
+            "date": "",
+            "arxiv": "",
+            "note": "in preparation"
+        }
+    ]
+}
