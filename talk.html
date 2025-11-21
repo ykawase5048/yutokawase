@@ -6,278 +6,105 @@
         <title>Talks & Slides</title>
 >>>>>>> Stashed changes
 
-<link href ="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel ="stylesheet" type ="text/css">
+        <link href ="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel ="stylesheet" type ="text/css">
+        <link rel ="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-<link rel ="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src ="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <style>
+            .talk-item {
+                display: grid;
+                grid-template-columns: 3rem 1fr;
+                column-gap: 0.6rem;
+                margin-bottom: 1.0rem;
+            }
+            .talk-index {
+                text-align: right;
+                font-weight: 300;
+            }
+            .talk-title {
+                font-weight: 600;
+                margin-bottom: 0.0rem;
+            }
+            .talk-info {
+                grid-column: 2;
+                opacity: 0.85;
+            }
 
-<div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls ="navbarNav" aria-expanded ="false" aria-label ="Toggle navigation">
-            <span class ="navbar-toggler-icon"></span >
-        </button >
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./paper.html">Papers</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./talk.html">Talks & Slides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./notes.html">Notes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./misc.html">Miscellaneous</a>
-                </li>
-            </ul>
+            .hover-info {
+                position: relative; /* 親を基準にする */
+                text-decoration: none;
+                color: #007bff;
+            }
+
+            .hover-info .hover-text {
+                display: none; /* 初期は非表示 */
+                position: absolute;
+                left: 100%; /* 親の右側に表示 */
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #333;
+                color: white;
+                padding: 0.3em 0.5em;
+                border-radius: 4px;
+                white-space: nowrap;
+                z-index: 10;
+                font-weight: 180;
+                font-size: 0.8em;
+            }
+
+            .hover-info:hover .hover-text {
+                display: block; /* ホバー時に表示 */
+            }
+        </style>
+
+        <script src ="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls ="navbarNav" aria-expanded ="false" aria-label ="Toggle navigation">
+                    <span class ="navbar-toggler-icon"></span >
+                </button >
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paper.html">Papers</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./talk.html">Talks & Slides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./notes.html">Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./misc.html">Miscellaneous</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <div class="p-5 mb-4 bg-light">
+                <div class="container-fluid py-5">
+                    <p class="lead">
+                        <span style="font-size:160%;">
+                            <em>
+                                Talks & Slides
+                            </em>
+                        </span>
+                    </p>
+
+                    <div id="talks-container"></div>
+
+                </div>
+            </div>
         </div>
-    </nav>
 
-    <div class="p-5 mb-4 bg-light">
-        <div class="container-fluid py-5">
-            <p class="lead">
-                <span style="font-size:160%;">
-                    <em>
-                        Talks & Slides
-                    </em>
-                </span>
-            </p>
-            <!-- class="xxxxx disabled" でボタン無効 -->
+        <script src="./scripts/talks.js"></script>
 
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Double categories of profunctors
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/cscat2025_slides_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    March 2025, Kumamoto, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://hisashi-aratake.gitlab.io/event/cscat2025" target="_blank">
-                        <u>CSCAT2025</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    On the decomposition of a strong epimorphism into regular epimorphisms
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/KCTM_slides_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    February 2025, Kyoto, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/view/kyoto-category-theory-meeting" target="_blank">
-                        <u>Kyoto Category Theory Meeting</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Universal algebra over locally presentable categories
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/cattokyo1st_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    November 2024, Tokyo, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/view/categoriesintokyo/%E7%AC%AC1%E5%9B%9E%E9%9B%86%E4%BC%9A" target="_blank">
-                        <u>Categories in Tokyo 1st</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Introduction to categorical universal algebra (short lecture)
-                    <a class="btn btn-outline-secondary btn-sm" href="./notes/IntroCatUnivalg.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/note.svg" width="16" height="16">
-                            note(JP)
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    November 2024, Tokyo, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/view/categoriesintokyo/%E7%AC%AC1%E5%9B%9E%E9%9B%86%E4%BC%9A" target="_blank">
-                        <u>Categories in Tokyo 1st</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Formalizing accessibility and duality in a virtual equipment
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/ct2024slide_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                    <a class="btn btn-outline-secondary btn-sm" href="https://youtu.be/wbpBkERWdBE?si=QqNtk3THQqXyIOa6" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/youtube.svg" width="16" height="16">
-                            video
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    June 2024, Santiago de Compostela, Spain.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://www.usc.gal/regaca/ct2024/" target="_blank">
-                        <u>CT2024</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Formal accessibility in a virtual equipment
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/cscat2024slide_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    March 2024, Chiba, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/faculty.gs.chiba-u.jp/cscat2024/home" target="_blank">
-                        <u>CSCAT2024</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Universal algebra over locally presentable categories
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/alg2024slide_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    February 2024, Tokyo, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/view/daisuuwakate2023" target="_blank">
-                        <u>Gathering for Young Researchers on Algebra 2024</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Monads, partial algebras, and partial logic
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/FMYG2023_slide_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    November 2023, Hota, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/view/mlwakatenokai2023" target="_blank">
-                        <u>Gathering for Young Researchers on Mathematical Logic 2023</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Birkhoff's variety theorem for relative algebraic theories
-                    <a class="btn btn-outline-secondary btn-sm" href="./slides/FilColimElim_slide_handout.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    September 2023, Sendai, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://www.mathsoc.jp/activity/meeting/tohoku23sept/" target="_blank">
-                        <u>MSJ2023 Autumn Meeting</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Birkhoff's variety theorem for relative algebraic theories
-                    <a class="btn btn-outline-secondary btn-sm" href="https://sites.uclouvain.be/ct2023/supports/1_MONDAY/Kawase.pdf" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/collection.svg" width="16" height="16">
-                            slides
-                        </div>
-                    </a>
-                    <a class="btn btn-outline-secondary btn-sm" href="https://youtu.be/NwoVDODw2Hw?si=Rk21m2I3C8zPPS9m" role="button" target="_blank">
-                        <div>
-                            <img src="./icons/youtube.svg" width="16" height="16">
-                            video
-                        </div>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    July 2023, Luvain-la-Neuve, Belgium.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.uclouvain.be/ct2023/" target="_blank">
-                        <u>CT2023</u>
-                    </a>
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    Finitary Monads on LFP Categories and Birkhoff's Variety Theorem
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    March 2023, Kyoto, Japan.
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    <a href="https://sites.google.com/view/cscat2023/home" target="_blank">
-                        <u>CSCAT2023</u>
-                    </a>
-                </h6>
-            </div>
-
-
-        </div>
-    </div>
-</div>
+    </body>
 </html>
