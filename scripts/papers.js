@@ -1,4 +1,4 @@
-fetch("papers.json")
+fetch("https://ykawase5048.github.io/yutokawase/papers.json")
     .then(response => response.json())
     .then(data => {
         renderPublications(data.publications, "publications-container");
