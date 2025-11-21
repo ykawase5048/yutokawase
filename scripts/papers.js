@@ -1,4 +1,4 @@
-fetch("../databases/papers.json")
+fetch("../papers.json")
     .then(response => response.json())
     .then(data => {
         renderPublications(data.publications, "publications-container");

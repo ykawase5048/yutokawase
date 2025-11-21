@@ -1,4 +1,4 @@
-fetch("../databases/talks.json")
+fetch("../talks.json")
     .then(response => response.json())
     .then(data => {
         renderTalks(data);
