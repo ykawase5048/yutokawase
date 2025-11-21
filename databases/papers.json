@@ -9,9 +9,15 @@
     ],
     "preprints":[
         {
-            "title": "Double categories of profunctors",
-            "date": "April 2025",
-            "arxiv": "https://arxiv.org/abs/2504.11099",
+            "title": "Birkhoff's variety theorem for relative algebraic theories",
+            "date": "April 2023",
+            "arxiv": "https://arxiv.org/abs/2304.04382",
+            "note": ""
+        },
+        {
+            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
+            "date": "September 2023",
+            "arxiv": "https://arxiv.org/abs/2309.05304",
             "note": ""
         },
         {
@@ -21,16 +27,16 @@
             "note": "master's thesis"
         },
         {
-            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
-            "date": "September 2023",
-            "arxiv": "https://arxiv.org/abs/2309.05304",
+            "title": "Double categories of profunctors",
+            "date": "April 2025",
+            "arxiv": "https://arxiv.org/abs/2504.11099",
             "note": ""
         },
         {
-            "title": "Birkhoff's variety theorem for relative algebraic theories",
-            "date": "April 2023",
-            "arxiv": "https://arxiv.org/abs/2304.04382",
-            "note": ""
+            "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
+            "date": "",
+            "arxiv": "",
+            "note": "in preparation"
         }
     ]
 }

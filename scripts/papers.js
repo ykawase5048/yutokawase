@@ -9,12 +9,13 @@ fetch("../databases/papers.json")
 function renderPublications(list, containerId) {
     const container = document.getElementById(containerId);
 
-    for (let i =  0; i < list.length; i++) {
+    for (let i = list.length - 1; i >= 0; i--) {
         const entry = list[i];
-        const number = list.length - i;
+        const number = i + 1;
 
         const div = document.createElement("div");
         div.className = "pub-item";
+        div.id = "publish-" + number; // <- 各要素にユニークID
 
         div.innerHTML = `
             <div class="pub-index">
@@ -57,13 +58,14 @@ function renderPublications(list, containerId) {
 function renderPreprints(list, containerId) {
     const container = document.getElementById(containerId);
 
-    for (let i =  0; i < list.length; i++) {
+    for (let i = list.length - 1; i >= 0; i--) {
         const entry = list[i];
-        const number = list.length - i;
+        const number = i + 1;
         const dateWithNote = entry.note ? `${entry.date} (${entry.note})` : entry.date;
 
         const div = document.createElement("div");
         div.className = "pub-item";
+        div.id = "preprint-" + number; // <- 各要素にユニークID
 
         div.innerHTML = `
             <div class="pub-index">
@@ -76,13 +78,13 @@ function renderPreprints(list, containerId) {
                 <div class="pub-title">
                     <h4 class="font-weight-light mb-0">
                         ${entry.title}
-                        <a class="btn btn-outline-secondary btn-sm"
-                           href="${entry.arxiv}" target="_blank">
+                        ${entry.arxiv ? `
+                        <a class="btn btn-outline-secondary btn-sm" href="${entry.arxiv}" target="_blank">
                             <div>
                                 <img src="./icons/arxiv-logomark-small.svg" width="20" height="20">
                                 arXiv
                             </div>
-                        </a>
+                        </a>` : ''}
                     </h4>
                 </div>
 

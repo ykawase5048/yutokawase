@@ -1,0 +1,209 @@
+{
+    "button-types": {
+        "slides": {
+            "text": "slides",
+            "icon": "./icons/collection.svg"
+        },
+        "youtube": {
+            "text": "video",
+            "icon": "./icons/youtube.svg"
+        },
+        "note-jp": {
+            "text": "note(JP)",
+            "icon": "./icons/note.svg"
+        }
+    },
+    
+    "talks": [
+        {
+            "title": "Finitary Monads on LFP Categories and Birkhoff's Variety Theorem",
+            "date": "March 2023",
+            "city": "Kyoto",
+            "country": "Japan",
+            "event": "CSCAT2023",
+            "event-url": "https://sites.google.com/view/cscat2023/home",
+            "buttons": [],
+            "preprints": [1]
+        },
+        {
+            "title": "Birkhoff's variety theorem for relative algebraic theories",
+            "date": "July 2023",
+            "city": "Louvain-la-Neuve",
+            "country": "Belgium",
+            "event": "CT2023",
+            "event-url": "https://sites.uclouvain.be/ct2023/",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "https://sites.uclouvain.be/ct2023/supports/1_MONDAY/Kawase.pdf",
+                    "isLocked": false
+                },
+                {
+                    "type": "youtube",
+                    "link": "https://youtu.be/NwoVDODw2Hw?si=Rk21m2I3C8zPPS9m",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [1]
+        },
+        {
+            "title": "Birkhoff's variety theorem for relative algebraic theories",
+            "date": "September 2023",
+            "city": "Sendai",
+            "country": "Japan",
+            "event": "MSJ2023 Autumn Meeting",
+            "event-url": "https://www.mathsoc.jp/activity/meeting/tohoku23sept/",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/FilColimElim_slide_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [1,2]
+        },
+        {
+            "title": "Monads, partial algebras, and partial logic",
+            "date": "November 2023",
+            "city": "Hota",
+            "country": "Japan",
+            "event": "Gathering for Young Researchers on Mathematical Logic 2023",
+            "event-url": "https://sites.google.com/view/mlwakatenokai2023",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/FMYG2023_slide_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [3]
+        },
+        {
+            "title": "Universal algebra over locally presentable categories",
+            "date": "February 2024",
+            "city": "Tokyo",
+            "country": "Japan",
+            "event": "Gathering for Young Researchers on Algebra 2024",
+            "event-url": "https://sites.google.com/view/daisuuwakate2023",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/alg2024slide_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [2,3]
+        },
+        {
+            "title": "Formal accessibility in a virtual equipment",
+            "date": "March 2024",
+            "city": "Chiba",
+            "country": "Japan",
+            "event": "CSCAT2024",
+            "event-url": "https://sites.google.com/faculty.gs.chiba-u.jp/cscat2024/home",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/cscat2024slide_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": []
+        },
+        {
+            "title": "Formalizing accessibility and duality in a virtual equipment",
+            "date": "June 2024",
+            "city": "Santiago de Compostela",
+            "country": "Spain",
+            "event": "CT2024",
+            "event-url": "https://www.usc.gal/regaca/ct2024/",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/ct2024slide_handout.pdf",
+                    "isLocked": false
+                },
+                {
+                    "type": "youtube",
+                    "link": "https://youtu.be/wbpBkERWdBE?si=QqNtk3THQqXyIOa6",
+                    "isLocked": false
+                }
+            ],
+            "preprints": []
+        },
+        {
+            "title": "Introduction to categorical universal algebra (short lecture)",
+            "date": "November 2024",
+            "city": "Tokyo",
+            "country": "Japan",
+            "event": "Categories in Tokyo 1st",
+            "event-url": "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC1%E5%9B%9E%E9%9B%86%E4%BC%9A",
+            "buttons": [
+                {
+                    "type": "note-jp",
+                    "link": "./notes/IntroCatUnivalg.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": []
+        },
+        {
+            "title": "Universal algebra over locally presentable categories",
+            "date": "November 2024",
+            "city": "Tokyo",
+            "country": "Japan",
+            "event": "Categories in Tokyo 1st",
+            "event-url": "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC1%E5%9B%9E%E9%9B%86%E4%BC%9A",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/cattokyo1st_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [2,3]
+        },
+        {
+            "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
+            "date": "February 2025",
+            "city": "Kyoto",
+            "country": "Japan",
+            "event": "Kyoto Category Theory Meeting",
+            "event-url": "https://sites.google.com/view/kyoto-category-theory-meeting",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/KCTM_slides_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [5]
+        },
+        {
+            "title": "Double categories of profunctors",
+            "date": "March 2025",
+            "city": "Kumamoto",
+            "country": "Japan",
+            "event": "CSCAT2025",
+            "event-url": "https://hisashi-aratake.gitlab.io/event/cscat2025",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/cscat2025_slides_handout.pdf",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [4]
+        },
+        {
+            "title": "On the iterated analogue of the fundamental homomorphism theorem",
+            "date": "March 2026",
+            "city": "Tokyo",
+            "country": "Japan",
+            "event": "MSJ2026 Annual Meeting",
+            "event-url": "https://www.mathsoc.jp/activity/meeting/tus26mar/",
+            "buttons": [],
+            "preprints": [5]
+        }
+    ]
+}
