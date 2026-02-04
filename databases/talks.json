@@ -202,7 +202,13 @@
             "country": "Japan",
             "event": "Categories in Tokyo 2nd",
             "event-url": "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC2%E5%9B%9E%E9%9B%86%E4%BC%9A",
-            "buttons": [],
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/cattokyo2nd_handout.pdf",
+                    "isLocked": true
+                }
+            ],
             "preprints": [5]
         },
         {
