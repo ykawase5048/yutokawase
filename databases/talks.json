@@ -207,6 +207,11 @@
                     "type": "slides",
                     "link": "./slides/cattokyo2nd_handout.pdf",
                     "isLocked": false
+                },
+                {
+                    "type": "youtube",
+                    "link": "https://youtu.be/j1bkxTXxqnU",
+                    "isLocked": false
                 }
             ],
             "preprints": [5]
