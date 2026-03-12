@@ -17,6 +17,8 @@ function renderPublications(list, containerId) {
         div.className = "pub-item";
         div.id = "publish-" + number; // <- 各要素にユニークID
 
+        const doidisabled = entry.isLocked ? "disabled" : "";
+
         div.innerHTML = `
             <div class="pub-index">
                 <h4 class="font-weight-light mb-0">
@@ -28,7 +30,7 @@ function renderPublications(list, containerId) {
                 <div class="pub-title">
                     <h4 class="font-weight-light mb-0">
                         ${entry.title}
-                        <a class="btn btn-outline-secondary btn-sm" href="https://doi.org/${entry.doi}" target="_blank">
+                        <a class="btn btn-outline-secondary btn-sm ${doidisabled}" href="https://doi.org/${entry.doi}" target="_blank">
                             <div>
                                 <img src="./icons/paper_plane.svg" width="20" height="20">
                                 DOI

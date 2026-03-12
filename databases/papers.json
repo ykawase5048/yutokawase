@@ -4,18 +4,21 @@
             "title": "Filtered colimit elimination from Birkhoff's variety theorem",
             "journal": "Journal of Pure and Applied Algebra",
             "doi": "10.1016/j.jpaa.2024.107794",
+            "isLocked": false,
             "year": "2025"
         },
         {
             "title": "Relativized universal algebra via partial Horn logic",
             "journal": "appear soon in 'Theory and Applications of Categories'",
             "doi": "",
+            "isLocked": true,
             "year": "2026"
         },
         {
             "title": "Double categories of profunctors",
             "journal": "appear soon in 'Applied Categorical Structures'",
             "doi": "",
+            "isLocked": true,
             "year": "2026"
         }
     ],
