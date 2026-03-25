@@ -227,7 +227,7 @@
                 {
                     "type": "slides",
                     "link": "./slides/msj2026annual_handout.pdf",
-                    "isLocked": true
+                    "isLocked": false
                 }
             ],
             "preprints": [5]
