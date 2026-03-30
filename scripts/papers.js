@@ -1,21 +1,66 @@
+//fetch("https://ykawase5048.github.io/yutokawase/databases/papers.json")
 fetch("../databases/papers.json")
     .then(response => response.json())
     .then(data => {
-        renderPublications(data.publications, "publications-container");
-        renderPreprints(data.preprints, "preprints-container");
+        renderPapers(data);
     });
 
-// Publications
-function renderPublications(list, containerId) {
-    const container = document.getElementById(containerId);
+// Papers
+function renderPapers(data) {
+    // Publications
+    const pubContainer = document.getElementById("publications-container");
+    const pubs = data.publications;
+    const buttonTypes = data["button-types"];
 
-    for (let i = list.length - 1; i >= 0; i--) {
-        const entry = list[i];
+    for (let i = pubs.length - 1; i >= 0; i--) {
+        const entry = pubs[i];
         const number = i + 1;
 
         const div = document.createElement("div");
         div.className = "pub-item";
         div.id = "publish-" + number; // <- 各要素にユニークID
+
+        // ボタン生成
+        let btnHTML = "";
+        for (const btn of entry.buttons) {
+            const cfg = buttonTypes[btn.type];
+            if (!cfg) continue;
+
+            let hreflink = ""; 
+            if (btn.isLocked) {
+                hreflink = "#"
+            } else if (btn.type === "doi") {
+                hreflink = "https://doi.org/" + entry.doi
+            } else {
+                hreflink = btn.link
+            };
+
+            const disabled = btn.isLocked ? "disabled" : "";
+            
+            if (btn.type === "doi") {
+                btnHTML += `
+                    <a class="btn btn-outline-secondary btn-sm ${disabled}"
+                    href="${hreflink}"
+                    target="_blank" role="button">
+                        <div>
+                            <img src="${cfg.icon}" width="20" height="20">
+                            ${cfg.text}
+                        </div>
+                    </a>
+                `;
+            }else {
+                btnHTML += `
+                    <a class="btn btn-outline-secondary btn-sm ${disabled}"
+                    href="${btn.isLocked ? "#" : btn.link}"
+                    target="_blank" role="button">
+                        <div>
+                            <img src="${cfg.icon}" width="20" height="20">
+                            ${cfg.text}
+                        </div>
+                    </a>
+                `;
+            };
+        };
 
         div.innerHTML = `
             <div class="pub-index">
@@ -28,12 +73,7 @@ function renderPublications(list, containerId) {
                 <div class="pub-title">
                     <h4 class="font-weight-light mb-0">
                         ${entry.title}
-                        <a class="btn btn-outline-secondary btn-sm" href="https://doi.org/${entry.doi}" target="_blank">
-                            <div>
-                                <img src="./icons/paper_plane.svg" width="20" height="20">
-                                DOI
-                            </div>
-                        </a>
+                        ${btnHTML}
                     </h4>
                 </div>
 
@@ -50,16 +90,15 @@ function renderPublications(list, containerId) {
                 </div>
             </div>
         `;
-        container.appendChild(div);
+        pubContainer.appendChild(div);
     }
-}
 
-// Preprints
-function renderPreprints(list, containerId) {
-    const container = document.getElementById(containerId);
+    // Preprints
+    const preContainer = document.getElementById("preprints-container");
+    const pres = data.preprints;
 
-    for (let i = list.length - 1; i >= 0; i--) {
-        const entry = list[i];
+    for (let i = pres.length - 1; i >= 0; i--) {
+        const entry = pres[i];
         const number = i + 1;
         const dateWithNote = entry.note ? `${entry.date} (${entry.note})` : entry.date;
 
@@ -95,6 +134,6 @@ function renderPreprints(list, containerId) {
                 </div>
             </div>
         `;
-        container.appendChild(div);
+        preContainer.appendChild(div);
     }
 }

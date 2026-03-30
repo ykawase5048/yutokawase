@@ -1,10 +1,70 @@
 {
+    "button-types": {
+        "doi": {
+            "text": "DOI",
+            "icon": "./icons/paper_plane.svg"
+        },
+        "url": {
+            "text": "URL",
+            "icon": "./icons/paper_plane.svg"
+        },
+        "arxiv": {
+            "text": "arXiv",
+            "icon": "./icons/arxiv-logomark-small.svg"
+        }
+    },
     "publications":[
         {
             "title": "Filtered colimit elimination from Birkhoff's variety theorem",
             "journal": "Journal of Pure and Applied Algebra",
+            "year": "2025",
             "doi": "10.1016/j.jpaa.2024.107794",
-            "year": "2025"
+            "buttons": [
+                {
+                    "type": "doi",
+                    "isLocked": false
+                },
+                {
+                    "type": "arxiv",
+                    "link": "https://arxiv.org/abs/2309.05304",
+                    "isLocked": false
+                }
+            ]
+        },
+        {
+            "title": "Relativized universal algebra via partial Horn logic",
+            "journal": "Theory and Applications of Categories",
+            "year": "2026",
+            "doi": "",
+            "buttons": [
+                {
+                    "type": "url",
+                    "link": "http://www.tac.mta.ca/tac/volumes/45/18/45-18abs.html",
+                    "isLocked": false
+                },
+                {
+                    "type": "arxiv",
+                    "link": "https://arxiv.org/abs/2403.19661",
+                    "isLocked": false
+                }
+            ]
+        },
+        {
+            "title": "Double categories of profunctors",
+            "journal": "appear soon in 'Applied Categorical Structures'",
+            "year": "2026",
+            "doi": "",
+            "buttons": [
+                {
+                    "type": "doi",
+                    "isLocked": true
+                },
+                {
+                    "type": "arxiv",
+                    "link": "https://arxiv.org/abs/2504.11099",
+                    "isLocked": false
+                }
+            ]
         }
     ],
     "preprints":[

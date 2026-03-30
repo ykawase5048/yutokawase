@@ -22,10 +22,18 @@ function renderTalks(data) {
             const cfg = buttonTypes[btn.type];
             if (!cfg) continue;
 
+            let hreflink = ""; 
+            if (btn.isLocked) {
+                hreflink = "#"
+            } else {
+                hreflink = btn.link
+            };
+
             const disabled = btn.isLocked ? "disabled" : "";
+
             btnHTML += `
                 <a class="btn btn-outline-secondary btn-sm ${disabled}"
-                   href="${btn.isLocked ? "#" : btn.link}"
+                   href="${hreflink}"
                    target="_blank" role="button">
                     <div>
                         <img src="${cfg.icon}" width="16" height="16">
