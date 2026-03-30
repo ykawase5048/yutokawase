@@ -197,12 +197,39 @@
         },
         {
             "title": "On the iterated analogue of the fundamental homomorphism theorem",
+            "date": "February 2026",
+            "city": "Tokyo",
+            "country": "Japan",
+            "event": "Categories in Tokyo 2nd",
+            "event-url": "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC2%E5%9B%9E%E9%9B%86%E4%BC%9A",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/cattokyo2nd_handout.pdf",
+                    "isLocked": false
+                },
+                {
+                    "type": "youtube",
+                    "link": "https://youtu.be/j1bkxTXxqnU",
+                    "isLocked": false
+                }
+            ],
+            "preprints": [5]
+        },
+        {
+            "title": "On the iterated analogue of the fundamental theorem of homomorphisms",
             "date": "March 2026",
             "city": "Tokyo",
             "country": "Japan",
             "event": "MSJ2026 Annual Meeting",
             "event-url": "https://www.mathsoc.jp/activity/meeting/tus26mar/",
-            "buttons": [],
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/msj2026annual_handout.pdf",
+                    "isLocked": false
+                }
+            ],
             "preprints": [5]
         }
     ]
