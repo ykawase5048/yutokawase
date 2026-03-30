@@ -1,5 +1,5 @@
-//fetch("https://ykawase5048.github.io/yutokawase/databases/papers.json")
-fetch("../databases/papers.json")
+fetch("https://ykawase5048.github.io/yutokawase/databases/papers.json")
+//fetch("../databases/papers.json")
     .then(response => response.json())
     .then(data => {
         renderPapers(data);
