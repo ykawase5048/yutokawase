@@ -231,6 +231,16 @@
                 }
             ],
             "preprints": [5]
+        },
+        {
+            "title":"On the decomposition of a strong epimorphism into regular epimorphisms",
+            "date":"July 2026",
+            "city": "Baltimore",
+            "country": "United States",
+            "event": "CT2026 (hybrid)",
+            "event-url": "https://ct2026.com/ct/",
+            "buttons": [],
+            "preprints": [5]
         }
     ]
 }
