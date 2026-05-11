@@ -51,13 +51,13 @@
         },
         {
             "title": "Double categories of profunctors",
-            "journal": "appear soon in 'Applied Categorical Structures'",
+            "journal": "Applied Categorical Structures",
             "year": "2026",
-            "doi": "",
+            "doi": "10.1007/s10485-026-09859-x",
             "buttons": [
                 {
                     "type": "doi",
-                    "isLocked": true
+                    "isLocked": false
                 },
                 {
                     "type": "arxiv",
