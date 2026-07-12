@@ -239,7 +239,13 @@
             "country": "United States",
             "event": "CT2026 (hybrid)",
             "event-url": "https://ct2026.com/ct/",
-            "buttons": [],
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/ct2026_handout.pdf",
+                    "isLocked": true
+                }
+            ],
             "preprints": [5]
         }
     ]
