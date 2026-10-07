@@ -97,6 +97,12 @@
             "date": "April 2026",
             "arxiv": "https://arxiv.org/abs/2604.05744",
             "note": "joint with Hayato Nasu"
+        },
+        {
+            "title": "Cocompletion under sifted colimits need not be finitely accessible",
+            "date": "October 2026",
+            "arxiv": "https://arxiv.org/abs/2610.08548",
+            "note": ""
         }
     ]
 }

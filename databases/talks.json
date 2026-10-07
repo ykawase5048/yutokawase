@@ -233,8 +233,8 @@
             "preprints": [5]
         },
         {
-            "title":"On the decomposition of a strong epimorphism into regular epimorphisms",
-            "date":"July 2026",
+            "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
+            "date": "July 2026",
             "city": "Baltimore",
             "country": "United States",
             "event": "CT2026 (hybrid)",
@@ -247,6 +247,16 @@
                 }
             ],
             "preprints": [5]
+        },
+        {
+            "title": "TBA",
+            "date": "November 2026",
+            "city": "Tokyo",
+            "country": "Japan",
+            "event": "Categories in Tokyo 3rd",
+            "event-url": "https://categories.tokyo/meetings/3.html",
+            "buttons": [],
+            "preprints": [6]
         }
     ]
 }
