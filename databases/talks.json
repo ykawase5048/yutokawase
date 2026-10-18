@@ -255,7 +255,13 @@
             "country": "Japan",
             "event": "Categories in Tokyo 3rd",
             "event-url": "https://categories.tokyo/meetings/3.html",
-            "buttons": [],
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/cattokyo3rd_handout.pdf",
+                    "isLocked": true
+                }
+            ],
             "preprints": [6]
         }
     ]
