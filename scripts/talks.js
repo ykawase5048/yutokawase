@@ -1,5 +1,5 @@
-fetch("https://ykawase5048.github.io/yutokawase/databases/talks.json")
-//fetch("../databases/talks.json")
+// 表示中のページを基準に、ローカル・公開環境それぞれのJSONを読み込む。
+fetch("./databases/talks.json")
     .then(response => response.json())
     .then(data => {
         renderTalks(data);
