@@ -235,9 +235,8 @@
         {
             "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
             "date": "July 2026",
-            "city": "Baltimore",
-            "country": "United States",
-            "event": "CT2026 (hybrid)",
+            "isOnline": true,
+            "event": "CT2026",
             "event-url": "https://ct2026.com/ct/",
             "buttons": [
                 {
@@ -263,6 +262,21 @@
                 }
             ],
             "preprints": [6]
+        },
+        {
+            "title": "Double categories of profunctors",
+            "date": "November 2026",
+            "isOnline": true,
+            "event": "Third Virtual Workshop on Double Categories",
+            "event-url": "https://bryceclarke.github.io/virtual-double-categories-workshop/index.html",
+            "buttons": [
+                {
+                    "type": "slides",
+                    "link": "./slides/xxxxx.pdf",
+                    "isLocked": true
+                }
+            ],
+            "preprints": [4]
         }
     ]
 }

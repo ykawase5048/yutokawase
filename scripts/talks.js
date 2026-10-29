@@ -13,6 +13,12 @@ function renderTalks(data) {
 
     for (let i = talks.length - 1; i >= 0; i--) {
         const t = talks[i];
+        const dateAndLocation = [
+            t.date,
+            t.isOnline === true ? "online" : null,
+            t.city,
+            t.country
+        ].filter(Boolean).join(", ");
 
         const div = document.createElement("div");
         div.className = "talk-item";
@@ -70,7 +76,7 @@ function renderTalks(data) {
                 </div>
                 <div class=talk info>
                     <h6 class="small font-weight-light mb-0" style="font-size: 0.75rem;">
-                        ${t.date}, ${t.city}, ${t.country}.
+                        ${dateAndLocation}.
                     </h6>
                     <h6 class="small font-weight-light mb-0" style="font-size: 0.75rem;">
                         <a href="${t["event-url"]}" target="_blank">
