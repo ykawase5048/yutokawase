@@ -8,6 +8,25 @@
 <script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+<style>
+    .navigation-card {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .navigation-card:hover,
+    .navigation-card:focus {
+        color: inherit;
+        text-decoration: none;
+        border-color: #007bff;
+    }
+
+    .navigation-card:focus {
+        outline: 2px solid #007bff;
+        outline-offset: 2px;
+    }
+</style>
+
 <div class="container">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls ="navbarNav" aria-expanded ="false" aria-label ="Toggle navigation">
@@ -186,53 +205,33 @@
     </div>
 
 
-    <div class="card mb-2">
+    <a href="./paper.html" class="card navigation-card mb-2" aria-labelledby="papers-card-title">
         <div class="card-body">
-            <h5 class="card-title">Papers</h5>
+            <h5 class="card-title" id="papers-card-title">Papers</h5>
             <p class="card-subtitle mb-2"><em>Publications and preprints.</em></p>
-            <a href="./paper.html" class="btn btn-outline-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 -2 16 16">
-                    <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
-                </svg>
-            </a>
         </div>
-    </div>
+    </a>
 
-    <div class="card mb-2">
+    <a href="./talk.html" class="card navigation-card mb-2" aria-labelledby="talks-card-title">
         <div class="card-body">
-            <h5 class="card-title">Talks & Slides</h5>
+            <h5 class="card-title" id="talks-card-title">Talks & Slides</h5>
             <p class="card-subtitle mb-2"><em>Talk list, slides, and recordings.</em></p>
-            <a href="./talk.html" class="btn btn-outline-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 -2 16 16">
-                    <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
-                </svg>
-            </a>
         </div>
-    </div>
+    </a>
 
-    <div class="card mb-2">
+    <a href="./notes.html" class="card navigation-card mb-2" aria-labelledby="notes-card-title">
         <div class="card-body">
-            <h5 class="card-title">Notes</h5>
+            <h5 class="card-title" id="notes-card-title">Notes</h5>
             <p class="card-subtitle mb-2"><em>Several informal notes.</em></p>
-            <a href="./notes.html" class="btn btn-outline-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 -2 16 16">
-                    <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
-                </svg>
-            </a>
         </div>
-    </div>
+    </a>
 
-    <div class="card mb-4">
+    <a href="./misc.html" class="card navigation-card mb-4" aria-labelledby="misc-card-title">
         <div class="card-body">
-            <h5 class="card-title">Miscellaneous</h5>
+            <h5 class="card-title" id="misc-card-title">Miscellaneous</h5>
             <p class="card-subtitle mb-2"><em>Hobbies and others.</em></p>
-            <a href="./misc.html" class="btn btn-outline-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 -2 16 16">
-                    <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
-                </svg>
-            </a>
         </div>
-    </div>
+    </a>
 
 
 
