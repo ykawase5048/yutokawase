@@ -1,95 +1,55 @@
 <!DOCTYPE html>
-    <head>
-        <title>Papers</title>
-<link rel="canonical" href="https://ykawase5048.github.io/paper">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yuto Kawase — category theory and universal algebra. Research, papers, talks, and notes.">
+    <meta name="theme-color" content="#136c63">
+    <title>Papers — Yuto Kawase</title>
+    <link rel="canonical" href="https://ykawase5048.github.io/paper">
+    <link rel="stylesheet" href="./styles/site.css">
+    <script type="module" src="./scripts/site.js"></script>
+    <script type="module" src="./scripts/papers.js"></script>
+</head>
+<body data-page="paper">
 
-        <link href ="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel ="stylesheet" type ="text/css">
-        <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-        <style>
-            .pub-item {
-                display: grid;
-                grid-template-columns: 2rem 1fr;
-                column-gap: 0.6rem;
-                margin-bottom: 1.0rem;
-            }
-            .pub-index {
-                text-align: right;
-                font-weight: bold;
-            }
-            .pub-title {
-                font-weight: 600;
-                margin-bottom: 0.1rem;
-            }
-            .pub-info {
-                grid-column: 2;
-                opacity: 0.85;
-            }
-        </style>
-
-        <script src ="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    </head>
-
-    <body>
-        <div class="container">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls ="navbarNav" aria-expanded ="false" aria-label ="Toggle navigation">
-                    <span class ="navbar-toggler-icon"></span >
-                </button >
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/paper">Papers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/talk">Talks & Slides</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/notes">Notes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/cv">CV</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/misc">Miscellaneous</a>
-                        </li>
-                    </ul>
-                </div>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-brand" href="/" data-site-link><span class="brand-mark" aria-hidden="true">YK</span><span data-i18n="name">Yuto Kawase</span></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="menu">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-label="navigation">
+                <ul>
+                    <li><a href="/" data-site-link data-i18n="home">Home</a></li>
+                    <li><a href="/paper" data-site-link data-i18n="paper" aria-current="page">Papers</a></li>
+                    <li><a href="/talk" data-site-link data-i18n="talk">Talks & Slides</a></li>
+                    <li><a href="/notes" data-site-link data-i18n="notes">Notes</a></li>
+                    <li><a href="/cv" data-site-link data-i18n="cv">CV</a></li>
+                    <li><a href="/misc" data-site-link data-i18n="misc">Miscellaneous</a></li>
+                </ul>
             </nav>
-
-            <div class="p-5 mb-4 bg-light">
-                <div class="container-fluid py-5">
-                    <p class="lead">
-                        <span style="font-size:160%;">
-                            <em>
-                                Publications
-                            </em>
-                        </span>
-                    </p>
-
-                    <div id="publications-container"></div>
-                </div>
-            </div>
-
-            <div class="p-5 mb-4 bg-light">
-                <div class="container-fluid py-5">
-                    <p class="lead">
-                        <span style="font-size:160%;">
-                            <em>
-                                Preprints
-                            </em>
-                        </span>
-                    </p>
-
-                    <div id="preprints-container"></div>
-                </div>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-label="language">
+                <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
             </div>
         </div>
-        <script src="./scripts/papers.js"></script>
-    </body>
+    </header>
+    <main class="container" id="main">
+        <header class="page-heading">
+
+            <h1 data-i18n="paper">Papers</h1>
+            <p class="page-description" data-i18n="paperDescription">Publications and preprints.</p>
+        </header>
+        <div class="filter-area">
+            <p class="filter-label" data-i18n="filter">Filter by topic</p>
+            <div class="filter-controls">
+                <div id="catalog-filters" class="filter-bar" role="group" aria-label="Filter by topic"></div>
+                <p id="catalog-count" class="catalog-count" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+        <div id="catalog-status" class="catalog-status" role="status" aria-live="polite"></div>
+        <div id="catalog" class="catalog" aria-busy="true"></div>
+        <noscript><p>Please enable JavaScript to load the entries. / 一覧の表示にはJavaScriptを有効にしてください。</p></noscript>
+    </main>
+</body>
 </html>

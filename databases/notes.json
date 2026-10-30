@@ -1,0 +1,80 @@
+{
+    "notes": [
+        {
+            "title": "The walking parallel pair has sifted colimits",
+            "date": "2026-04",
+            "url": "./notes/walkingParallelPair-siftedColim.pdf",
+            "language": "en",
+            "tags": [
+                "1-category"
+            ]
+        },
+        {
+            "title": "Eilenberg–MacLaneによる圏の定義",
+            "date": "2025-12",
+            "url": "./notes/OriginCategory.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category"
+            ]
+        },
+        {
+            "title": "終対象はいつ有限表示か",
+            "date": "2024-12",
+            "url": "./notes/FPTerminal.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category",
+                "accessible-category"
+            ]
+        },
+        {
+            "title": "極限と余極限の交換",
+            "date": "2024-12",
+            "url": "./notes/CommLimColim.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category"
+            ]
+        },
+        {
+            "title": "圏論的普遍代数学入門",
+            "date": "2024-11",
+            "url": "./notes/IntroCatUnivalg.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category",
+                "categorical-univalg"
+            ]
+        },
+        {
+            "title": "群の圏はグンカテゴリーである",
+            "date": "2023-12",
+            "url": "./notes/GroupGumm.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category",
+                "categorical-univalg"
+            ]
+        },
+        {
+            "title": "コイコライザを持つとは限らない正則圏",
+            "date": "2023-12",
+            "url": "./notes/RegularCat.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category"
+            ]
+        },
+        {
+            "title": "Catの対称モノイダル閉構造",
+            "date": "2022-12",
+            "url": "./notes/smcc_str_JP.pdf",
+            "language": "ja",
+            "tags": [
+                "1-category",
+                "accessible-category"
+            ]
+        }
+    ]
+}

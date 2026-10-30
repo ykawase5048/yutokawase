@@ -1,0 +1,46 @@
+{
+    "tags": [
+        {
+            "id": "1-category",
+            "label": {
+                "en": "1-category",
+                "ja": "1-圏"
+            }
+        },
+        {
+            "id": "double-category",
+            "label": {
+                "en": "double category",
+                "ja": "二重圏"
+            }
+        },
+        {
+            "id": "enriched-category",
+            "label": {
+                "en": "enriched category",
+                "ja": "豊穣圏"
+            }
+        },
+        {
+            "id": "accessible-category",
+            "label": {
+                "en": "accessible category",
+                "ja": "到達可能圏"
+            }
+        },
+        {
+            "id": "categorical-univalg",
+            "label": {
+                "en": "categorical universal algebra",
+                "ja": "圏論的普遍代数学"
+            }
+        },
+        {
+            "id": "categorical-logic",
+            "label": {
+                "en": "categorical logic",
+                "ja": "圏論的論理学"
+            }
+        }
+    ]
+}
