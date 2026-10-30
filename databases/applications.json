@@ -1,0 +1,15 @@
+{
+    "applications": [
+        {
+            "title": {
+                "en": "JSPS DC1",
+                "ja": "学振DC1"
+            },
+            "description": {
+                "en": "The application I submitted for DC1.",
+                "ja": "DC1に応募した際の申請書です。"
+            },
+            "url": "./misc/dc.pdf"
+        }
+    ]
+}

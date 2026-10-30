@@ -1,275 +1,92 @@
 <!DOCTYPE html>
-<title>Yuto Kawase</title>
-<link rel="canonical" href="https://ykawase5048.github.io/">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yuto Kawase — category theory and universal algebra. Research, papers, talks, and notes.">
+    <meta name="theme-color" content="#136c63">
+    <title>Yuto Kawase</title>
+    <link rel="canonical" href="https://ykawase5048.github.io/">
+    <link rel="stylesheet" href="./styles/site.css">
+    <script type="module" src="./scripts/site.js"></script>
+</head>
+<body data-page="home">
 
-<link href ="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel ="stylesheet" type ="text/css">
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-brand" href="/" data-site-link><span class="brand-mark" aria-hidden="true">YK</span><span data-i18n="name">Yuto Kawase</span></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="menu">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-label="navigation">
+                <ul>
+                    <li><a href="/" data-site-link data-i18n="home" aria-current="page">Home</a></li>
+                    <li><a href="/paper" data-site-link data-i18n="paper">Papers</a></li>
+                    <li><a href="/talk" data-site-link data-i18n="talk">Talks & Slides</a></li>
+                    <li><a href="/notes" data-site-link data-i18n="notes">Notes</a></li>
+                    <li><a href="/cv" data-site-link data-i18n="cv">CV</a></li>
+                    <li><a href="/misc" data-site-link data-i18n="misc">Miscellaneous</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-label="language">
+                <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
+            </div>
+        </div>
+    </header>
+    <main class="container" id="main">
+        <header class="hero">
 
-<link rel ="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src ="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<style>
-    .navigation-card {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .navigation-card:hover,
-    .navigation-card:focus {
-        color: inherit;
-        text-decoration: none;
-        border-color: #007bff;
-    }
-
-    .navigation-card:focus {
-        outline: 2px solid #007bff;
-        outline-offset: 2px;
-    }
-</style>
-
-<div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls ="navbarNav" aria-expanded ="false" aria-label ="Toggle navigation">
-            <span class ="navbar-toggler-icon"></span >
-        </button >
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/paper">Papers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/talk">Talks & Slides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/notes">Notes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cv">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/misc">Miscellaneous</a>
-                </li>
+            <h1 data-i18n="name">Yuto Kawase</h1>
+            <div class="hero-details">
+                <p data-i18n-html="role">Ph.D. student, JSPS Research Fellow (<a href="https://www.jsps.go.jp/english/e-pd/" target="_blank" rel="noopener noreferrer">DC1</a>) from April 2024</p>
+                <p data-i18n-html="affiliation">Research Institute for Mathematical Sciences (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank" rel="noopener noreferrer">RIMS</a>), Kyoto University, Japan</p>
+                <p class="contact">ykawase(at)kurims.kyoto-u.ac.jp</p>
+            </div>
+            <div class="social-links">
+                <a class="resource-link" href="https://twitter.com/yutokawase" target="_blank" rel="noopener noreferrer"><img src="./icons/X_icon.svg" alt="" width="16" height="16">Twitter</a>
+                <a class="resource-link" href="https://arxiv.org/a/kawase_y_1.html" target="_blank" rel="noopener noreferrer"><img src="./icons/arxiv-logomark-small.svg" alt="" width="16" height="16">arXiv</a>
+                <a class="resource-link" href="https://orcid.org/0009-0003-3865-4069" target="_blank" rel="noopener noreferrer"><img src="./icons/ORCID_iD.svg" alt="" width="16" height="16">ORCiD</a>
+                <a class="resource-link" href="https://scholar.google.co.jp/citations?user=JcaWzesAAAAJ" target="_blank" rel="noopener noreferrer"><img src="./icons/Google_Scholar_logo.svg" alt="" width="16" height="16">Google Scholar</a>
+            </div>
+        </header>
+        <section class="home-section">
+            <h2 class="section-heading" data-i18n="interests">Research interests</h2>
+            <div class="interests-grid">
+                <div class="interest"><h3 data-i18n="categoricalAlgebra">Categorical algebra</h3><p data-i18n="algebraInterests">Equational theory · Birkhoff varieties · universal algebra · categorical Galois theory · homological algebra</p></div>
+                <div class="interest"><h3 data-i18n="categoryTheory">Category theory</h3><p data-i18n="categoryInterests">Accessible and locally presentable categories · monads and their algebras · enriched categories · double categories</p></div>
+            </div>
+        </section>
+        <section class="home-section">
+            <div class="navigation-grid">
+                <a class="navigation-card" href="/paper" data-site-link><h3 data-i18n="paper">Papers</h3><p data-i18n="paperDescription">Publications and preprints.</p></a>
+                <a class="navigation-card" href="/talk" data-site-link><h3 data-i18n="talk">Talks & Slides</h3><p data-i18n="talkDescription">Talk list, slides, and recordings.</p></a>
+                <a class="navigation-card" href="/notes" data-site-link><h3 data-i18n="notes">Notes</h3><p data-i18n="notesDescription">Several informal notes.</p></a>
+                <a class="navigation-card" href="/cv" data-site-link><h3 data-i18n="cv">CV</h3><p data-i18n="cvDescription">Education.</p></a>
+                <a class="navigation-card" href="/misc" data-site-link><h3 data-i18n="misc">Miscellaneous</h3><p data-i18n="miscDescription">Hobbies and others.</p></a>
+            </div>
+        </section>
+        <section class="home-section">
+            <div class="photo-grid">
+                <figure><img src="./img/20240301_cospan.JPG" alt="Yuto Kawase answering a question at the blackboard" data-i18n-alt="answeringAlt" loading="lazy"><figcaption><p data-i18n="answering">Me answering a question</p><p class="photo-credit" data-i18n-html="photoCredit">March 1, 2024 · Tokyo · Taken by <a href="https://yuki-imamura.gitlab.io/" target="_blank" rel="noopener noreferrer">Yuki Imamura</a></p></figcaption></figure>
+                <figure><img src="./img/20240301_adjoint.JPG" alt="Yuto Kawase describing adjunctions at the blackboard" data-i18n-alt="adjunctionsAlt" loading="lazy"><figcaption><p data-i18n="adjunctions">Me describing adjunctions</p><p class="photo-credit" data-i18n-html="photoCredit">March 1, 2024 · Tokyo · Taken by <a href="https://yuki-imamura.gitlab.io/" target="_blank" rel="noopener noreferrer">Yuki Imamura</a></p></figcaption></figure>
+            </div>
+        </section>
+        <section class="home-section">
+            <h2 class="section-heading" data-i18n="colleagues">Friends and colleagues</h2>
+            <ul class="colleague-list">
+                <li><a href="https://sites.google.com/view/keisuke-hoshino/" data-i18n="keisukeHoshino" target="_blank" rel="noopener noreferrer">Keisuke Hoshino</a> <span>(RIMS)</span></li>
+                <li><a href="https://hayatonasu.github.io/" data-i18n="hayatoNasu" target="_blank" rel="noopener noreferrer">Hayato Nasu</a> <span data-i18n="dalhousieAffiliation">(Dalhousie University)</span></li>
+                <li><a href="https://www.kurims.kyoto-u.ac.jp/~tsanada/" data-i18n="takahiroSanada" data-href-en="https://www.kurims.kyoto-u.ac.jp/~tsanada/" data-href-ja="https://www.kurims.kyoto-u.ac.jp/~tsanada/index-j.html" target="_blank" rel="noopener noreferrer">Takahiro Sanada</a> <span data-i18n="fukuiAffiliation">(Fukui Prefectural University)</span></li>
+                <li><a href="https://ryuyahora.jp/" data-i18n="ryuyaHora" data-href-en="https://ryuyahora.jp/" data-href-ja="https://ryuyahora.jp/ja/" target="_blank" rel="noopener noreferrer">Ryuya Hora</a> <span data-i18n="zenAffiliation">(ZEN University)</span></li>
+                <li><a href="https://kengohirata.github.io/khirata/" data-i18n="kengoHirata" target="_blank" rel="noopener noreferrer">Kengo Hirata</a> <span data-i18n="chibaAffiliation">(Chiba University)</span></li>
+                <li><a href="https://yukimaehara.github.io/" data-i18n="yukiMaehara" data-href-en="https://yukimaehara.github.io/" data-href-ja="https://yukimaehara.github.io/ja" target="_blank" rel="noopener noreferrer">Yuki Maehara</a> <span data-i18n="tokyoMetropolitanAffiliation">(Tokyo Metropolitan University)</span></li>
+                <li><a href="https://yuki-imamura.gitlab.io/" data-i18n="yukiImamura" data-href-en="https://yuki-imamura.gitlab.io/" data-href-ja="https://yuki-imamura.gitlab.io/ja/" target="_blank" rel="noopener noreferrer">Yuki Imamura</a> <span data-i18n="osakaMetropolitanAffiliation">(Osaka Metropolitan University)</span></li>
             </ul>
-        </div>
-    </nav>
-
-
-    <!-- 自己紹介 -->
-    <div class="jumbotron">
-        <h1 class="display-4">
-            Yuto Kawase/<span style="font-size:90%;">河瀬 悠人</span>
-        </h1>
-        <p class="lead">
-            <span style="font-size:120%;">
-                <em>
-                    Ph.D. student, JSPS Research Fellow (<a href="https://www.jsps.go.jp/english/e-pd/" target="_blank"><u>DC1</u></a>) from April 2024
-                </em>
-            </span>
-        </p>
-        <p class="lead">
-            Research Institute for Mathematical Sciences (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank"><u>RIMS</u></a>), Kyoto University, Japan
-        </p>
-        <p class="lead">
-            ykawase(at)kurims.kyoto-u.ac.jp
-        </p>
-        <p class="lead">
-            <em>
-                Category theory, Universal algebra
-            </em>
-        </p>
-
-
-        <hr class="my-4">
-
-        <div class="container px-5 text-center">
-            <div class="row">
-                <div class="col">
-                    <a class="btn btn-outline-secondary btn-lg" href="https://twitter.com/yutokawase" role="button" target="_blank">
-                        <div class="px-3">
-                            <img src="./icons/X_icon.svg" width="24" height="24">
-                            Twitter
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="btn btn-outline-secondary btn-lg" href="https://arxiv.org/a/kawase_y_1.html" role="button" target="_blank">
-                        <div class="px-3">
-                            <img src="./icons/arxiv-logomark-small.svg" width="24" height="24">
-                            arXiv
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="btn btn-outline-secondary btn-lg" href="https://orcid.org/0009-0003-3865-4069" role="button" target="_blank">
-                        <div class="px-3">
-                            <img src="./icons/ORCID_iD.svg" width="24" height="24">
-                            ORCiD
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="btn btn-outline-secondary btn-lg" href="https://scholar.google.co.jp/citations?user=JcaWzesAAAAJ" role="button" target="_blank">
-                        <div class="px-3">
-                            <img src="./icons/Google_Scholar_logo.svg" width="24" height="24">
-                            Google Scholar
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <hr class="my-4">
-
-
-
-        <div class="container-fluid py-5">
-            <p class="lead">
-                <span style="font-size:160%;">
-                    <em>
-                        Research Interests
-                    </em>
-                </span>
-            </p>
-            
-            <div class="col-md mb-3">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr>
-                            <td>
-                                Categorical Algebra:
-                            </td>
-                            <td>
-                                equational theory, Birkhoff varieties, universal algebra, categorical Galois theory, homological algebra
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Category Theory:
-                            </td>
-                            <td>
-                                accessible and locally presentable categories, monads and their algebras, enriched categories, double categories
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-
-
-    </div>
-
-
-    <a href="/paper" class="card navigation-card mb-2" aria-labelledby="papers-card-title">
-        <div class="card-body">
-            <h5 class="card-title" id="papers-card-title">Papers</h5>
-            <p class="card-subtitle mb-2"><em>Publications and preprints.</em></p>
-        </div>
-    </a>
-
-    <a href="/talk" class="card navigation-card mb-2" aria-labelledby="talks-card-title">
-        <div class="card-body">
-            <h5 class="card-title" id="talks-card-title">Talks & Slides</h5>
-            <p class="card-subtitle mb-2"><em>Talk list, slides, and recordings.</em></p>
-        </div>
-    </a>
-
-    <a href="/notes" class="card navigation-card mb-2" aria-labelledby="notes-card-title">
-        <div class="card-body">
-            <h5 class="card-title" id="notes-card-title">Notes</h5>
-            <p class="card-subtitle mb-2"><em>Several informal notes.</em></p>
-        </div>
-    </a>
-
-    <a href="/cv" class="card navigation-card mb-2" aria-labelledby="cv-card-title">
-        <div class="card-body">
-            <h5 class="card-title" id="cv-card-title">CV</h5>
-            <p class="card-subtitle mb-2"><em>Education.</em></p>
-        </div>
-    </a>
-
-    <a href="/misc" class="card navigation-card mb-4" aria-labelledby="misc-card-title">
-        <div class="card-body">
-            <h5 class="card-title" id="misc-card-title">Miscellaneous</h5>
-            <p class="card-subtitle mb-2"><em>Hobbies and others.</em></p>
-        </div>
-    </a>
-
-
-
-    <div class="card-group">
-        <div class="card">
-            <img src="img/20240301_cospan.JPG" class="card-img-top">
-            <div class="card-body">
-                <h6 class="small font-weight-light mb-1">
-                    Me answering a question
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    March 1, 2024. At Tokyo. Taken by Yuki Imamura
-                </h6>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/20240301_adjoint.JPG" class="card-img-top">
-            <div class="card-body">
-                <h6 class="small font-weight-light mb-1">
-                    Me describing adjunctions
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    March 1, 2024. At Tokyo. Taken by Yuki Imamura
-                </h6>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="p-5 mb-4 bg-light">
-        <div class="container-fluid py-5">
-            <p class="lead">
-                <span style="font-size:160%;">
-                    <em>
-                        Friends and colleagues
-                    </em>
-                </span>
-            </p>
-            
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <p><a href="https://sites.google.com/view/keisuke-hoshino/" target="_blank"><u>Keisuke Hoshino</u></a> (RIMS)</p>
-                    <p><a href="https://hayatonasu.github.io/" target="_blank"><u>Hayato Nasu</u></a> (Dalhousie University)</p>
-                    <p><a href="https://www.kurims.kyoto-u.ac.jp/~tsanada/" target="_blank"><u>Takahiro Sanada</u></a> (Fukui Prefectural University)</p>
-                    <p><a href="https://ryuyahora.jp/" target="_blank"><u>Ryuya Hora</u></a> (ZEN University)</p>
-                    <p><a href="https://kengohirata.github.io/khirata/" target="_blank"><u>Kengo Hirata</u></a> (Chiba University)</p>
-                    <p><a href="https://yukimaehara.github.io/" target="_blank"><u>Yuki Maehara</u></a> (Tokyo Metropolitan University)</p>
-                    <p><a href="https://yuki-imamura.gitlab.io/" target="_blank"><u>Yuki Imamura</u></a> (Osaka Metropolitan University)</p>
-                </h6>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="p-5 mb-4 bg-light">
-        <div class="container-fluid py-5">
-            <p class="lead">
-                <span style="font-size:160%;">
-                    <em>
-                        Outreach
-                    </em>
-                </span>
-            </p>
-            
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <p>Contributed an article to <a href="https://www.nippyo.co.jp/shop/magazine/9611.html" target="_blank"><u>Sūgaku Seminar, November 2025.</u></a> (in japanese)</p>
-                </h6>
-            </div>
-        </div>
-    </div>
-
-</div>
+        </section>
+        <section class="home-section">
+            <h2 class="section-heading" data-i18n="outreach">Outreach</h2>
+            <p data-i18n-html="outreachText">Contributed an article to <a href="https://www.nippyo.co.jp/shop/magazine/9611.html" target="_blank" rel="noopener noreferrer">Sūgaku Seminar, November 2025</a> (in Japanese).</p>
+        </section>
+    </main>
+</body>
 </html>

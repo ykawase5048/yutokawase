@@ -1,24 +1,73 @@
 {
-    "button-types": {
-        "doi": {
-            "text": "DOI",
-            "icon": "./icons/paper_plane.svg"
-        },
-        "url": {
-            "text": "URL",
-            "icon": "./icons/paper_plane.svg"
-        },
-        "arxiv": {
-            "text": "arXiv",
-            "icon": "./icons/arxiv-logomark-small.svg"
-        }
-    },
-    "publications":[
+    "papers": [
         {
-            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
-            "journal": "Journal of Pure and Applied Algebra",
-            "year": "2025",
-            "doi": "10.1016/j.jpaa.2024.107794",
+            "key": "Kawase2026sifted",
+            "title": "Cocompletion under sifted colimits need not be finitely accessible",
+            "date": "2026-10",
+            "note": {
+                "en": "",
+                "ja": ""
+            },
+            "publication": null,
+            "buttons": [
+                {
+                    "type": "arxiv",
+                    "link": "https://arxiv.org/abs/2610.08548",
+                    "isLocked": false
+                }
+            ],
+            "tags": [
+                "1-category",
+                "accessible-category"
+            ]
+        },
+        {
+            "key": "KawaseNasu2026decomposition",
+            "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
+            "date": "2026-04",
+            "note": {
+                "en": [
+                    "joint with ",
+                    {
+                        "text": "Hayato Nasu",
+                        "url": "https://hayatonasu.github.io/"
+                    }
+                ],
+                "ja": [
+                    {
+                        "text": "奈須隼大",
+                        "url": "https://hayatonasu.github.io/"
+                    },
+                    "氏との共著"
+                ]
+            },
+            "publication": null,
+            "buttons": [
+                {
+                    "type": "arxiv",
+                    "link": "https://arxiv.org/abs/2604.05744",
+                    "isLocked": false
+                }
+            ],
+            "tags": [
+                "1-category",
+                "accessible-category",
+                "categorical-logic"
+            ]
+        },
+        {
+            "key": "Kawase2025profunctor",
+            "title": "Double categories of profunctors",
+            "date": "2025-04",
+            "note": {
+                "en": "",
+                "ja": ""
+            },
+            "publication": {
+                "journal": "Applied Categorical Structures",
+                "year": 2026,
+                "doi": "10.1007/s10485-026-09859-x"
+            },
             "buttons": [
                 {
                     "type": "doi",
@@ -26,16 +75,27 @@
                 },
                 {
                     "type": "arxiv",
-                    "link": "https://arxiv.org/abs/2309.05304",
+                    "link": "https://arxiv.org/abs/2504.11099",
                     "isLocked": false
                 }
+            ],
+            "tags": [
+                "double-category",
+                "enriched-category"
             ]
         },
         {
+            "key": "Kawase2024relativized",
             "title": "Relativized universal algebra via partial Horn logic",
-            "journal": "Theory and Applications of Categories",
-            "year": "2026",
-            "doi": "",
+            "date": "2024-01",
+            "note": {
+                "en": "master's thesis",
+                "ja": "修士論文"
+            },
+            "publication": {
+                "journal": "Theory and Applications of Categories",
+                "year": 2026
+            },
             "buttons": [
                 {
                     "type": "url",
@@ -47,13 +107,26 @@
                     "link": "https://arxiv.org/abs/2403.19661",
                     "isLocked": false
                 }
+            ],
+            "tags": [
+                "1-category",
+                "categorical-univalg",
+                "accessible-category"
             ]
         },
         {
-            "title": "Double categories of profunctors",
-            "journal": "Applied Categorical Structures",
-            "year": "2026",
-            "doi": "10.1007/s10485-026-09859-x",
+            "key": "Kawase2023elimination",
+            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
+            "date": "2023-09",
+            "note": {
+                "en": "",
+                "ja": ""
+            },
+            "publication": {
+                "journal": "Journal of Pure and Applied Algebra",
+                "year": 2025,
+                "doi": "10.1016/j.jpaa.2024.107794"
+            },
             "buttons": [
                 {
                     "type": "doi",
@@ -61,48 +134,48 @@
                 },
                 {
                     "type": "arxiv",
-                    "link": "https://arxiv.org/abs/2504.11099",
+                    "link": "https://arxiv.org/abs/2309.05304",
                     "isLocked": false
                 }
+            ],
+            "tags": [
+                "1-category",
+                "categorical-univalg",
+                "accessible-category"
+            ]
+        },
+        {
+            "key": "Kawase2023birkhoff",
+            "title": "Birkhoff's variety theorem for relative algebraic theories",
+            "date": "2023-04",
+            "note": {
+                "en": "",
+                "ja": ""
+            },
+            "publication": null,
+            "buttons": [
+                {
+                    "type": "arxiv",
+                    "link": "https://arxiv.org/abs/2304.04382",
+                    "isLocked": false
+                }
+            ],
+            "tags": [
+                "1-category",
+                "categorical-univalg",
+                "accessible-category"
             ]
         }
     ],
-    "preprints":[
-        {
-            "title": "Birkhoff's variety theorem for relative algebraic theories",
-            "date": "April 2023",
-            "arxiv": "https://arxiv.org/abs/2304.04382",
-            "note": ""
-        },
-        {
-            "title": "Filtered colimit elimination from Birkhoff's variety theorem",
-            "date": "September 2023",
-            "arxiv": "https://arxiv.org/abs/2309.05304",
-            "note": ""
-        },
-        {
-            "title": "Relativized universal algebra via partial Horn logic",
-            "date": "January 2024",
-            "arxiv": "https://arxiv.org/abs/2403.19661",
-            "note": "master's thesis"
-        },
-        {
-            "title": "Double categories of profunctors",
-            "date": "April 2025",
-            "arxiv": "https://arxiv.org/abs/2504.11099",
-            "note": ""
-        },
-        {
-            "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
-            "date": "April 2026",
-            "arxiv": "https://arxiv.org/abs/2604.05744",
-            "note": "joint with Hayato Nasu"
-        },
-        {
-            "title": "Cocompletion under sifted colimits need not be finitely accessible",
-            "date": "October 2026",
-            "arxiv": "https://arxiv.org/abs/2610.08548",
-            "note": ""
-        }
-    ]
+    "legacyAnchors": {
+        "preprint-1": "Kawase2023birkhoff",
+        "preprint-2": "Kawase2023elimination",
+        "publish-1": "Kawase2023elimination",
+        "preprint-3": "Kawase2024relativized",
+        "publish-2": "Kawase2024relativized",
+        "preprint-4": "Kawase2025profunctor",
+        "publish-3": "Kawase2025profunctor",
+        "preprint-5": "KawaseNasu2026decomposition",
+        "preprint-6": "Kawase2026sifted"
+    }
 }

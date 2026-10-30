@@ -1,142 +1,55 @@
 <!DOCTYPE html>
-<title>Notes</title>
-<link rel="canonical" href="https://ykawase5048.github.io/notes">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yuto Kawase — category theory and universal algebra. Research, papers, talks, and notes.">
+    <meta name="theme-color" content="#136c63">
+    <title>Notes — Yuto Kawase</title>
+    <link rel="canonical" href="https://ykawase5048.github.io/notes">
+    <link rel="stylesheet" href="./styles/site.css">
+    <script type="module" src="./scripts/site.js"></script>
+    <script type="module" src="./scripts/notes.js"></script>
+</head>
+<body data-page="notes">
 
-<link href ="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel ="stylesheet" type ="text/css">
-
-<link rel ="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src ="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls ="navbarNav" aria-expanded ="false" aria-label ="Toggle navigation">
-            <span class ="navbar-toggler-icon"></span >
-        </button >
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/paper">Papers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/talk">Talks & Slides</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/notes">Notes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cv">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/misc">Miscellaneous</a>
-                </li>
-            </ul>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-brand" href="/" data-site-link><span class="brand-mark" aria-hidden="true">YK</span><span data-i18n="name">Yuto Kawase</span></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="menu">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-label="navigation">
+                <ul>
+                    <li><a href="/" data-site-link data-i18n="home">Home</a></li>
+                    <li><a href="/paper" data-site-link data-i18n="paper">Papers</a></li>
+                    <li><a href="/talk" data-site-link data-i18n="talk">Talks & Slides</a></li>
+                    <li><a href="/notes" data-site-link data-i18n="notes" aria-current="page">Notes</a></li>
+                    <li><a href="/cv" data-site-link data-i18n="cv">CV</a></li>
+                    <li><a href="/misc" data-site-link data-i18n="misc">Miscellaneous</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-label="language">
+                <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
+            </div>
         </div>
-    </nav>
+    </header>
+    <main class="container" id="main">
+        <header class="page-heading">
 
-
-    <div class="p-5 mb-4 bg-light">
-        <div class="container-fluid py-5">
-            <p class="lead">
-                <span style="font-size:160%;">
-                    <em>
-                        Notes
-                    </em>
-                </span>
-            </p>
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/walkingParallelPair-siftedColim.pdf" target="_blank">
-                        <u>The walking parallel pair has sifted colimits</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    April 2026.
-                </h6>
+            <h1 data-i18n="notes">Notes</h1>
+            <p class="page-description" data-i18n="notesDescription">Several informal notes.</p>
+        </header>
+        <div class="filter-area">
+            <p class="filter-label" data-i18n="filter">Filter by topic</p>
+            <div class="filter-controls">
+                <div id="catalog-filters" class="filter-bar" role="group" aria-label="Filter by topic"></div>
+                <p id="catalog-count" class="catalog-count" role="status" aria-live="polite"></p>
             </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/OriginCategory.pdf" target="_blank">
-                        <u>Eilenberg&ndash;MacLaneによる圏の定義</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    December 2025. (in japanese)
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/FPTerminal.pdf" target="_blank">
-                        <u>終対象はいつ有限表示か</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    December 2024. (in japanese)
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/CommLimColim.pdf" target="_blank">
-                        <u>極限と余極限の交換</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    December 2024. (in japanese)
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/IntroCatUnivalg.pdf" target="_blank">
-                        <u>圏論的普遍代数学入門</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    November 2024. (in japanese)
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/GroupGumm.pdf" target="_blank">
-                        <u>群の圏はグンカテゴリーである</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    December 2023. (in japanese)
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/RegularCat.pdf" target="_blank">
-                        <u>コイコライザを持つとは限らない正則圏</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    December 2023. (in japanese)
-                </h6>
-            </div>
-
-            <div class="col-md mb-3">
-                <h6 class="font-weight-normal mb-0">
-                    <a href="./notes/smcc_str_JP.pdf" target="_blank">
-                        <u>Catの対称モノイダル閉構造</u>
-                    </a>
-                </h6>
-                <h6 class="small font-weight-light mb-0">
-                    December 2022. (in japanese)
-                </h6>
-            </div>
-
         </div>
-    </div>
-</div>
+        <div id="catalog-status" class="catalog-status" role="status" aria-live="polite"></div>
+        <div id="catalog" class="catalog" aria-busy="true"></div>
+        <noscript><p>Please enable JavaScript to load the entries. / 一覧の表示にはJavaScriptを有効にしてください。</p></noscript>
+    </main>
+</body>
 </html>

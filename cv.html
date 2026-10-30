@@ -3,89 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV</title>
-<link rel="canonical" href="https://ykawase5048.github.io/cv">
-
-    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta name="description" content="Yuto Kawase — category theory and universal algebra. Research, papers, talks, and notes.">
+    <meta name="theme-color" content="#136c63">
+    <title>CV — Yuto Kawase</title>
+    <link rel="canonical" href="https://ykawase5048.github.io/cv">
+    <link rel="stylesheet" href="./styles/site.css">
+    <script type="module" src="./scripts/site.js"></script>
 </head>
-<body>
-    <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/paper">Papers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/talk">Talks & Slides</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/notes">Notes</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/cv" aria-current="page">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/misc">Miscellaneous</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<body data-page="cv">
 
-        <main class="p-5 mb-4 bg-light">
-            <div class="container-fluid py-5">
-                <p class="lead">
-                    <span style="font-size:160%;">
-                        <em>
-                            Education
-                        </em>
-                    </span>
-                </p>
-                <div class="col-md mb-3">
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    April 2018 - March 2022
-                                </td>
-                                <td>
-                                    Undergraduate course at Faculty of Science, Kyoto University.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    April 2022 - March 2024
-                                </td>
-                                <td>
-                                    Master's course at Division of Mathematics and Mathematical Sciences, Graduate School of Science, Kyoto University (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank"><u>RIMS</u></a>).
-                                    Supervised by Prof. <a href="https://www.kurims.kyoto-u.ac.jp/~hassei/" target="_blank"><u>Masahito Hasegawa</u></a>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    April 2024 -
-                                </td>
-                                <td>
-                                    Doctoral course at Division of Mathematics and Mathematical Sciences, Graduate School of Science, Kyoto University (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank"><u>RIMS</u></a>).
-                                    Research Fellow of Japan Society for the Promotion of Science (<a href="https://www.jsps.go.jp/english/e-pd/" target="_blank"><u>DC1</u></a>).
-                                    Supervised by Prof. <a href="https://www.kurims.kyoto-u.ac.jp/~hassei/" target="_blank"><u>Masahito Hasegawa</u></a>.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-brand" href="/" data-site-link><span class="brand-mark" aria-hidden="true">YK</span><span data-i18n="name">Yuto Kawase</span></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="menu">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-label="navigation">
+                <ul>
+                    <li><a href="/" data-site-link data-i18n="home">Home</a></li>
+                    <li><a href="/paper" data-site-link data-i18n="paper">Papers</a></li>
+                    <li><a href="/talk" data-site-link data-i18n="talk">Talks & Slides</a></li>
+                    <li><a href="/notes" data-site-link data-i18n="notes">Notes</a></li>
+                    <li><a href="/cv" data-site-link data-i18n="cv" aria-current="page">CV</a></li>
+                    <li><a href="/misc" data-site-link data-i18n="misc">Miscellaneous</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-label="language">
+                <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
             </div>
-        </main>
-    </div>
+        </div>
+    </header>
+    <main class="container" id="main">
+        <header class="page-heading">
+
+            <h1 data-i18n="education">Education</h1>
+        </header>
+        <div class="timeline">
+            <section class="timeline-entry">
+                <p class="timeline-date" data-i18n="undergraduateDates">April 2018 – March 2022</p>
+                <div class="timeline-content"><h2 data-i18n="undergraduate">Undergraduate course</h2><div class="timeline-details"><p data-i18n="undergraduateText">Faculty of Science, Kyoto University.</p></div></div>
+            </section>
+            <section class="timeline-entry">
+                <p class="timeline-date" data-i18n="mastersDates">April 2022 – March 2024</p>
+                <div class="timeline-content"><h2 data-i18n="masters">Master’s course</h2><div class="timeline-details"><p data-i18n-html="graduateText">Division of Mathematics and Mathematical Sciences, Graduate School of Science, Kyoto University (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank" rel="noopener noreferrer">RIMS</a>).</p><p class="entry-detail" data-i18n-html="supervisor">Supervised by Prof. <a href="https://www.kurims.kyoto-u.ac.jp/~hassei/" target="_blank" rel="noopener noreferrer">Masahito Hasegawa</a>.</p></div></div>
+            </section>
+            <section class="timeline-entry">
+                <p class="timeline-date" data-i18n="doctoralDates">April 2024 – present</p>
+                <div class="timeline-content"><h2 data-i18n="doctoral">Doctoral course</h2><div class="timeline-details"><p data-i18n-html="graduateText">Division of Mathematics and Mathematical Sciences, Graduate School of Science, Kyoto University (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank" rel="noopener noreferrer">RIMS</a>).</p><p data-i18n-html="fellowship">Research Fellow of Japan Society for the Promotion of Science (<a href="https://www.jsps.go.jp/english/e-pd/" target="_blank" rel="noopener noreferrer">DC1</a>).</p><p class="entry-detail" data-i18n-html="supervisor">Supervised by Prof. <a href="https://www.kurims.kyoto-u.ac.jp/~hassei/" target="_blank" rel="noopener noreferrer">Masahito Hasegawa</a>.</p></div></div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

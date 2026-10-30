@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found — Yuto Kawase</title>
-  <script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yuto Kawase — category theory and universal algebra. Research, papers, talks, and notes.">
+    <meta name="theme-color" content="#136c63">
+    <title>Page not found — Yuto Kawase</title>
+    <link rel="canonical" href="https://ykawase5048.github.io/404.html">
+    <link rel="stylesheet" href="/styles/site.css">
+    <script type="module" src="/scripts/site.js"></script>
+    <script>
     // Keep old bookmarks, including PDF links, working after the move.
     const legacyPrefix = '/yutokawase';
     const currentPath = window.location.pathname;
@@ -17,9 +22,36 @@
     }
   </script>
 </head>
-<body>
-  <h1>Page not found</h1>
-  <p>This site is now at <a href="https://ykawase5048.github.io/">https://ykawase5048.github.io/</a>.</p>
-  <p>If you followed an old link, please remove <code>/yutokawase</code> from the start of its path.</p>
+<body data-page="notFound">
+
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-brand" href="/" data-site-link><span class="brand-mark" aria-hidden="true">YK</span><span data-i18n="name">Yuto Kawase</span></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="menu">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-label="navigation">
+                <ul>
+                    <li><a href="/" data-site-link data-i18n="home">Home</a></li>
+                    <li><a href="/paper" data-site-link data-i18n="paper">Papers</a></li>
+                    <li><a href="/talk" data-site-link data-i18n="talk">Talks & Slides</a></li>
+                    <li><a href="/notes" data-site-link data-i18n="notes">Notes</a></li>
+                    <li><a href="/cv" data-site-link data-i18n="cv">CV</a></li>
+                    <li><a href="/misc" data-site-link data-i18n="misc">Miscellaneous</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-label="language">
+                <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+                <button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button>
+            </div>
+        </div>
+    </header>
+    <main class="container" id="main">
+        <header class="page-heading">
+
+            <h1 data-i18n="notFound">Page not found</h1>
+        </header>
+        <p data-i18n="notFoundText">The page may have moved. Please use the navigation to find it.</p>
+        <p><a href="/" data-site-link data-i18n="backHome">Back to home</a></p>
+    </main>
 </body>
 </html>
