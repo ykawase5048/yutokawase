@@ -53,7 +53,7 @@ function renderTalks(data) {
         let preprintsHTML = "";
         for (const preprintNo of t.preprints) {
             preprintsHTML += `
-                <a href="./paper.html#preprint-${preprintNo}" class="hover-info" style="font-size: 0.8rem;">
+                <a href="/paper#preprint-${preprintNo}" class="hover-info" style="font-size: 0.8rem;">
                     [${preprintNo}]
                     <span class="hover-text">
                         source preprint

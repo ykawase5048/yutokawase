@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page moved — Yuto Kawase</title>
-  <link rel="canonical" href="https://ykawase5048.github.io/paper.html">
+  <link rel="canonical" href="https://ykawase5048.github.io/paper">
   <script>
     // Keep old bookmarks, including PDF links, working after the move.
     const legacyPrefix = '/yutokawase';
     const currentPath = window.location.pathname;
     if (currentPath === legacyPrefix || currentPath.startsWith(legacyPrefix + '/')) {
       const newPath = currentPath.slice(legacyPrefix.length) || '/';
-      window.location.replace(window.location.origin + newPath + window.location.search + window.location.hash);
+      const cleanPath = newPath === '/index.html'
+        ? '/'
+        : newPath.replace(/^\/(paper|talk|notes|cv|misc)\.html$/, '/$1');
+      window.location.replace(window.location.origin + cleanPath + window.location.search + window.location.hash);
     }
   </script>
-  <noscript><meta http-equiv="refresh" content="0; url=https://ykawase5048.github.io/paper.html"></noscript>
+  <noscript><meta http-equiv="refresh" content="0; url=https://ykawase5048.github.io/paper"></noscript>
 </head>
 <body>
-  <p>This page has moved to <a href="https://ykawase5048.github.io/paper.html">https://ykawase5048.github.io/paper.html</a>.</p>
+  <p>This page has moved to <a href="https://ykawase5048.github.io/paper">https://ykawase5048.github.io/paper</a>.</p>
 </body>
 </html>

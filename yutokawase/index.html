@@ -11,7 +11,10 @@
     const currentPath = window.location.pathname;
     if (currentPath === legacyPrefix || currentPath.startsWith(legacyPrefix + '/')) {
       const newPath = currentPath.slice(legacyPrefix.length) || '/';
-      window.location.replace(window.location.origin + newPath + window.location.search + window.location.hash);
+      const cleanPath = newPath === '/index.html'
+        ? '/'
+        : newPath.replace(/^\/(paper|talk|notes|cv|misc)\.html$/, '/$1');
+      window.location.replace(window.location.origin + cleanPath + window.location.search + window.location.hash);
     }
   </script>
   <noscript><meta http-equiv="refresh" content="0; url=https://ykawase5048.github.io/"></noscript>
