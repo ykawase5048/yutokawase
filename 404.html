@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Yuto Kawase</title>
+  <script>
+    // Keep old bookmarks, including PDF links, working after the move.
+    const legacyPrefix = '/yutokawase';
+    const currentPath = window.location.pathname;
+    if (currentPath === legacyPrefix || currentPath.startsWith(legacyPrefix + '/')) {
+      const newPath = currentPath.slice(legacyPrefix.length) || '/';
+      const cleanPath = newPath === '/index.html'
+        ? '/'
+        : newPath.replace(/^\/(paper|talk|notes|cv|misc)\.html$/, '/$1');
+      window.location.replace(window.location.origin + cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+</head>
+<body>
+  <h1>Page not found</h1>
+  <p>This site is now at <a href="https://ykawase5048.github.io/">https://ykawase5048.github.io/</a>.</p>
+  <p>If you followed an old link, please remove <code>/yutokawase</code> from the start of its path.</p>
+</body>
+</html>
