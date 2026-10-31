@@ -6,7 +6,7 @@ import { JSDOM, VirtualConsole } from 'jsdom';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
 
-export async function loadPage(page, { query = '?lang=en', hash = '', saved, fetchOverride, storageBlocked = false } = {}) {
+export async function loadPage(page, { query = '?lang=en', hash = '', saved, fetchOverride, headOverride, storageBlocked = false } = {}) {
     const errors = [];
     const console = new VirtualConsole();
     console.on('jsdomError', error => errors.push(error.message));
@@ -21,7 +21,10 @@ export async function loadPage(page, { query = '?lang=en', hash = '', saved, fet
     if (storageBlocked) Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } });
     window.Element.prototype.scrollIntoView = function () { window.lastScrolledId = this.id; };
     window.requestAnimationFrame = callback => { callback(); return 1; };
-    window.fetch = async input => {
+    window.fetch = async (input, options = {}) => {
+        if (options.method === 'HEAD') return headOverride
+            ? headOverride(input, options)
+            : { ok: true, headers: new Headers({ 'Last-Modified': 'Fri, 30 Oct 2026 16:00:00 GMT' }) };
         const name = String(input).match(/([^/]+)\.json$/)[1];
         const custom = await fetchOverride?.(name);
         if (custom) return custom;
@@ -37,7 +40,9 @@ export async function loadPage(page, { query = '?lang=en', hash = '', saved, fet
         .map(script => `import ${JSON.stringify(script.getAttribute('src'))};`).join('\n'), {
         context, identifier: pathToFileURL(path.join(root, 'test-entry.js')).href
     });
-    await entry.link((specifier, parent) => getModule(new URL(specifier, parent.identifier).href));
+    await entry.link((specifier, parent) => getModule(specifier.startsWith('/')
+        ? pathToFileURL(path.join(root, specifier.slice(1))).href
+        : new URL(specifier, parent.identifier).href));
     await entry.evaluate();
     await settle();
     return { dom, window, document, errors, close: () => window.close() };

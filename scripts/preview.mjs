@@ -42,6 +42,7 @@ export function createPreviewServer(root = siteRoot) {
             if (!found) file = path.join(root, '404.html');
             response.writeHead(found ? 200 : 404, {
                 'Content-Type': mime[path.extname(file).toLowerCase()] ?? 'application/octet-stream',
+                'Last-Modified': (await stat(file)).mtime.toUTCString(),
                 'Cache-Control': 'no-store'
             });
             if (request.method === 'HEAD') response.end();

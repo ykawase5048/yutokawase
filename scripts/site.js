@@ -1,6 +1,8 @@
 import { initI18n } from './i18n.js';
+import { initFooter } from './footer.js';
 
 initI18n();
+initFooter();
 const menu = document.getElementById('menu-toggle');
 const nav = document.getElementById('site-nav');
 function closeMenu() {
