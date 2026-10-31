@@ -12,7 +12,7 @@ export const translations = {
         name: 'Yuto Kawase',
         role: 'Ph.D. student, JSPS Research Fellow (<a href="https://www.jsps.go.jp/english/e-pd/" target="_blank" rel="noopener noreferrer">DC1</a>) from April 2024',
         affiliation: 'Research Institute for Mathematical Sciences (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank" rel="noopener noreferrer">RIMS</a>), Kyoto University, Japan',
-        groupMembership: 'I\'m a menber of <a href="https://www.kurims.kyoto-u.ac.jp/~cs/" target="_blank" rel="noopener noreferrer">RIMS-CS Group</a>.',
+        groupMembership: 'I\'m a member of <a href="https://www.kurims.kyoto-u.ac.jp/~cs/" target="_blank" rel="noopener noreferrer">RIMS-CS Group</a>.',
         interests: 'Research interests', categoricalAlgebra: 'Categorical algebra', categoryTheory: 'Category theory',
         algebraInterests: 'Equational theory · Birkhoff varieties · universal algebra · categorical Galois theory · homological algebra',
         categoryInterests: 'Accessible and locally presentable categories · monads and their algebras · enriched categories · double categories',
