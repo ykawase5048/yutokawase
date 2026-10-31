@@ -1,81 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
-<url>
-  <loc>https://ykawase5048.github.io/</loc>
-  <priority>1.0</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/paper</loc>
-  <priority>0.8</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/talk</loc>
-  <priority>0.8</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/notes</loc>
-  <priority>0.8</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/cv</loc>
-  <priority>0.8</priority>
-  <lastmod>2026-10-29</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/misc</loc>
-  <priority>0.8</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/notes/masters_thesis.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/slides/cscat2024slide_handout.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/slides/alg2024slide_handout.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/slides/FMYG2023_slide_handout.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/slides/FilColimElim_slide_handout.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/notes/GroupGumm.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/notes/RegularCat.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/notes/smcc_str_JP.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-<url>
-  <loc>https://ykawase5048.github.io/misc/dc.pdf</loc>
-  <priority>0.7</priority>
-  <lastmod>2024-03-13T19:52:33+09:00</lastmod>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://ykawase5048.github.io/</loc>
+        <lastmod>2026-10-30T23:30:42+09:00</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/paper</loc>
+        <lastmod>2026-10-30T23:30:42+09:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/talk</loc>
+        <lastmod>2026-10-30T23:30:42+09:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes</loc>
+        <lastmod>2026-10-30T23:30:42+09:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/cv</loc>
+        <lastmod>2026-10-30T23:30:42+09:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/misc</loc>
+        <lastmod>2026-10-30T23:30:42+09:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/CommLimColim.pdf</loc>
+        <lastmod>2025-05-09T18:20:33+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/FPTerminal.pdf</loc>
+        <lastmod>2024-12-04T22:47:37+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/GroupGumm.pdf</loc>
+        <lastmod>2024-02-29T12:19:01+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/IntroCatUnivalg.pdf</loc>
+        <lastmod>2024-12-02T10:49:58+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/OriginCategory.pdf</loc>
+        <lastmod>2025-12-11T02:56:37+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/RegularCat.pdf</loc>
+        <lastmod>2024-02-29T12:19:01+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/smcc_str_JP.pdf</loc>
+        <lastmod>2024-02-26T18:45:04+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/notes/walkingParallelPair-siftedColim.pdf</loc>
+        <lastmod>2026-04-05T18:08:47+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/FMYG2023_slide_handout.pdf</loc>
+        <lastmod>2024-02-26T18:45:04+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/FilColimElim_slide_handout.pdf</loc>
+        <lastmod>2024-02-26T18:45:04+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/KCTM_slides_handout.pdf</loc>
+        <lastmod>2025-02-09T16:07:00+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/alg2024slide_handout.pdf</loc>
+        <lastmod>2024-02-29T21:12:48+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/cattokyo1st_handout.pdf</loc>
+        <lastmod>2024-11-23T23:53:51+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/cattokyo2nd_handout.pdf</loc>
+        <lastmod>2026-02-05T23:20:24+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/cscat2024slide_handout.pdf</loc>
+        <lastmod>2024-03-13T17:13:01+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/cscat2025_slides_handout.pdf</loc>
+        <lastmod>2025-03-10T00:57:11+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/ct2024slide_handout.pdf</loc>
+        <lastmod>2024-06-19T16:22:44+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/ct2026_handout.pdf</loc>
+        <lastmod>2026-07-15T18:47:34+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/slides/msj2026annual_handout.pdf</loc>
+        <lastmod>2026-03-19T16:36:08+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ykawase5048.github.io/misc/dc.pdf</loc>
+        <lastmod>2024-02-26T21:41:02+09:00</lastmod>
+        <priority>0.7</priority>
+    </url>
 </urlset>
