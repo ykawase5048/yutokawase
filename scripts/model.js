@@ -34,6 +34,11 @@ export function paperUrl(key, language) {
     return `/paper?lang=${language}#paper-${encodeURIComponent(key)}`;
 }
 
+export function catalogEntryUrl(category, id, language) {
+    const page = { paper: 'paper', talk: 'talk', note: 'notes' }[category];
+    return `/${page}?lang=${language}#${category}-${encodeURIComponent(id)}`;
+}
+
 export function talkUrl(key, language) {
     return `/talk?${new URLSearchParams({ lang: language, paper: key })}`;
 }
@@ -95,6 +100,13 @@ export function validateCatalog({ papers, talks, notes, tags, legacyAnchors = {}
         if (!/^[A-Z][A-Za-z]+\d{4}[a-z][A-Za-z0-9]*$/.test(paper.key) || keys.has(paper.key)) errors.push(`Invalid or duplicate paper key: ${paper.key}`);
         keys.add(paper.key);
         if (paper.publication && (!paper.publication.journal || !Number.isInteger(paper.publication.year))) errors.push(`Invalid publication: ${paper.key}`);
+    }
+    for (const [name, entries] of [['talk', talks], ['note', notes]]) {
+        const ids = new Set();
+        for (const entry of entries) {
+            if (typeof entry.id !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(entry.id) || ids.has(entry.id)) errors.push(`Invalid or duplicate ${name} id: ${entry.id}`);
+            ids.add(entry.id);
+        }
     }
     for (const entry of [...papers, ...talks, ...notes]) {
         if (!entry.title || !/^\d{4}-(0[1-9]|1[0-2])$/.test(entry.date)) errors.push(`Invalid title/date: ${entry.title}`);

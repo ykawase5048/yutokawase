@@ -3,9 +3,23 @@ import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { localized, validateApplications, validateCatalog, resourceHref } from './model.js';
+import { validUpdate } from './updates-model.js';
 
 const data = Object.assign({}, ...['papers', 'talks', 'notes', 'tags'].map(name => JSON.parse(fs.readFileSync(`databases/${name}.json`, 'utf8'))));
 assert.deepEqual(validateCatalog(data), [], 'Catalog validation');
+const { updates } = JSON.parse(fs.readFileSync('databases/updates.json', 'utf8'));
+const targets = new Set([
+    ...data.papers.map(entry => `paper:${entry.key}`),
+    ...data.talks.map(entry => `talk:${entry.id}`),
+    ...data.notes.map(entry => `note:${entry.id}`)
+]);
+const updateIds = new Set();
+for (const update of updates) {
+    const id = `${update.commit}:${update.category}:${update.targetId}`;
+    assert.ok(validUpdate(update) && targets.has(`${update.category}:${update.targetId}`), `Invalid update: ${id}`);
+    assert.ok(!updateIds.has(id), `Duplicate update: ${id}`);
+    updateIds.add(id);
+}
 const { applications } = JSON.parse(fs.readFileSync('databases/applications.json', 'utf8'));
 assert.deepEqual(validateApplications(applications), [], 'Application documents validation');
 for (const file of fs.readdirSync('scripts').filter(file => /\.(?:js|mjs)$/.test(file))) execFileSync(process.execPath, ['--check', `scripts/${file}`]);

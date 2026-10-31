@@ -9,6 +9,7 @@
     <link rel="canonical" href="https://ykawase5048.github.io/">
     <link rel="stylesheet" href="./styles/site.css">
     <script type="module" src="./scripts/site.js"></script>
+    <script type="module" src="./scripts/updates.js"></script>
 </head>
 <body data-page="home">
 
@@ -50,12 +51,9 @@
                 <a class="resource-link" href="https://scholar.google.co.jp/citations?user=JcaWzesAAAAJ" target="_blank" rel="noopener noreferrer"><img src="./icons/Google_Scholar_logo.svg" alt="" width="16" height="16">Google Scholar</a>
             </div>
         </header>
-        <section class="home-section">
-            <h2 class="section-heading" data-i18n="interests">Research interests</h2>
-            <div class="interests-grid">
-                <div class="interest"><h3 data-i18n="categoricalAlgebra">Categorical algebra</h3><p data-i18n="algebraInterests">Equational theory · Birkhoff varieties · universal algebra · categorical Galois theory · homological algebra</p></div>
-                <div class="interest"><h3 data-i18n="categoryTheory">Category theory</h3><p data-i18n="categoryInterests">Accessible and locally presentable categories · monads and their algebras · enriched categories · double categories</p></div>
-            </div>
+        <section class="home-section" id="recent-updates" aria-labelledby="recent-updates-heading" hidden>
+            <h2 class="section-heading" id="recent-updates-heading" data-i18n="recentUpdates">Recent updates</h2>
+            <ul class="updates-list" id="recent-updates-list"></ul>
         </section>
         <section class="home-section">
             <div class="navigation-grid">
@@ -64,6 +62,13 @@
                 <a class="navigation-card" href="/notes" data-site-link><h3 data-i18n="notes">Notes</h3><p data-i18n="notesDescription">Several informal notes.</p></a>
                 <a class="navigation-card" href="/cv" data-site-link><h3 data-i18n="cv">CV</h3><p data-i18n="cvDescription">Education.</p></a>
                 <a class="navigation-card" href="/misc" data-site-link><h3 data-i18n="misc">Miscellaneous</h3><p data-i18n="miscDescription">Hobbies and others.</p></a>
+            </div>
+        </section>
+        <section class="home-section">
+            <h2 class="section-heading" data-i18n="interests">Research interests</h2>
+            <div class="interests-grid">
+                <div class="interest"><h3 data-i18n="categoricalAlgebra">Categorical algebra</h3><p data-i18n="algebraInterests">Equational theory · Birkhoff varieties · universal algebra · categorical Galois theory · homological algebra</p></div>
+                <div class="interest"><h3 data-i18n="categoryTheory">Category theory</h3><p data-i18n="categoryInterests">Accessible and locally presentable categories · monads and their algebras · enriched categories · double categories</p></div>
             </div>
         </section>
         <section class="home-section">

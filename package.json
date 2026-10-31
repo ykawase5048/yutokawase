@@ -3,7 +3,11 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "updates": "node scripts/generate-updates.mjs",
+        "build": "node scripts/build-site.mjs",
+        "pretest": "npm run updates",
         "test": "node --experimental-vm-modules --test tests/*.test.mjs",
+        "precheck": "npm run updates",
         "check": "node scripts/check.mjs"
     },
     "devDependencies": {

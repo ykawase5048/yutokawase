@@ -4,6 +4,7 @@ import { stat } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { writeUpdates } from './generate-updates.mjs';
 
 const siteRoot = fileURLToPath(new URL('../', import.meta.url));
 const mime = {
@@ -57,6 +58,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     const index = process.argv.indexOf('--port');
     const port = index < 0 ? 8000 : Number(process.argv[index + 1]);
     if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('Port must be between 1 and 65535.');
+    const history = writeUpdates();
+    console.log(`Generated ${history.updates.length} updates from main.`);
     const server = createPreviewServer();
     server.on('error', error => {
         console.error(error.code === 'EADDRINUSE' ? `Port ${port} is already in use. Choose another port with --port.` : error.message);
