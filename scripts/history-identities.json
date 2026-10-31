@@ -1,0 +1,331 @@
+{
+    "papers": [
+        {
+            "id": "Kawase2026sifted",
+            "arxiv": [
+                "2610.08548"
+            ],
+            "titles": [
+                "Cocompletion under sifted colimits need not be finitely accessible"
+            ]
+        },
+        {
+            "id": "KawaseNasu2026decomposition",
+            "arxiv": [
+                "2604.05744"
+            ],
+            "titles": [
+                "On the decomposition of a strong epimorphism into regular epimorphisms"
+            ]
+        },
+        {
+            "id": "Kawase2025profunctor",
+            "arxiv": [
+                "2504.11099"
+            ],
+            "titles": [
+                "Double categories of profunctors"
+            ]
+        },
+        {
+            "id": "Kawase2024relativized",
+            "arxiv": [
+                "2403.19661"
+            ],
+            "titles": [
+                "Relativized universal algebra via partial Horn logic"
+            ]
+        },
+        {
+            "id": "Kawase2023elimination",
+            "arxiv": [
+                "2309.05304"
+            ],
+            "titles": [
+                "Filtered colimit elimination from Birkhoff's variety theorem"
+            ]
+        },
+        {
+            "id": "Kawase2023birkhoff",
+            "arxiv": [
+                "2304.04382"
+            ],
+            "titles": [
+                "Birkhoff's variety theorem for relative algebraic theories"
+            ]
+        }
+    ],
+    "talks": [
+        {
+            "id": "virtual-double-categories-2026",
+            "date": "2026-11",
+            "titles": [
+                "Double categories of profunctors"
+            ],
+            "events": [
+                "Third Virtual Workshop on Double Categories"
+            ],
+            "urls": [
+                "https://bryceclarke.github.io/virtual-double-categories-workshop/index.html"
+            ]
+        },
+        {
+            "id": "categories-in-tokyo-3",
+            "date": "2026-11",
+            "titles": [
+                "Cocompletion under sifted colimits need not be finitely accessible"
+            ],
+            "events": [
+                "Categories in Tokyo 3rd",
+                "Categories in Tokyo 第3回集会"
+            ],
+            "urls": [
+                "https://categories.tokyo/meetings/3.html"
+            ]
+        },
+        {
+            "id": "ct2026",
+            "date": "2026-07",
+            "titles": [
+                "On the decomposition of a strong epimorphism into regular epimorphisms"
+            ],
+            "events": [
+                "CT2026"
+            ],
+            "urls": [
+                "https://ct2026.com/ct/"
+            ]
+        },
+        {
+            "id": "msj2026-annual",
+            "date": "2026-03",
+            "titles": [
+                "On the iterated analogue of the fundamental theorem of homomorphisms"
+            ],
+            "events": [
+                "MSJ2026 Annual Meeting",
+                "日本数学会2026年度年会"
+            ],
+            "urls": [
+                "https://www.mathsoc.jp/en/meeting/tus26mar/",
+                "https://www.mathsoc.jp/activity/meeting/tus26mar/"
+            ]
+        },
+        {
+            "id": "categories-in-tokyo-2",
+            "date": "2026-02",
+            "titles": [
+                "On the iterated analogue of the fundamental homomorphism theorem"
+            ],
+            "events": [
+                "Categories in Tokyo 2nd",
+                "Categories in Tokyo 第2回集会"
+            ],
+            "urls": [
+                "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC2%E5%9B%9E%E9%9B%86%E4%BC%9A"
+            ]
+        },
+        {
+            "id": "cscat2025",
+            "date": "2025-03",
+            "titles": [
+                "Double categories of profunctors"
+            ],
+            "events": [
+                "CSCAT2025",
+                "理論計算機科学と圏論ワークショップ (CSCAT2025)"
+            ],
+            "urls": [
+                "https://hisashi-aratake.gitlab.io/event/cscat2025"
+            ]
+        },
+        {
+            "id": "kyoto-category-theory-2025",
+            "date": "2025-02",
+            "titles": [
+                "On the decomposition of a strong epimorphism into regular epimorphisms"
+            ],
+            "events": [
+                "Kyoto Category Theory Meeting"
+            ],
+            "urls": [
+                "https://sites.google.com/view/kyoto-category-theory-meeting"
+            ]
+        },
+        {
+            "id": "categories-in-tokyo-1-research",
+            "date": "2024-11",
+            "titles": [
+                "Universal algebra over locally presentable categories"
+            ],
+            "events": [
+                "Categories in Tokyo 1st",
+                "Categories in Tokyo 第1回集会"
+            ],
+            "urls": [
+                "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC1%E5%9B%9E%E9%9B%86%E4%BC%9A"
+            ]
+        },
+        {
+            "id": "categories-in-tokyo-1-lecture",
+            "date": "2024-11",
+            "titles": [
+                "Introduction to categorical universal algebra (short lecture)"
+            ],
+            "events": [
+                "Categories in Tokyo 1st",
+                "Categories in Tokyo 第1回集会"
+            ],
+            "urls": [
+                "https://sites.google.com/view/categoriesintokyo/%E7%AC%AC1%E5%9B%9E%E9%9B%86%E4%BC%9A"
+            ]
+        },
+        {
+            "id": "ct2024",
+            "date": "2024-06",
+            "titles": [
+                "Formalizing accessibility and duality in a virtual equipment"
+            ],
+            "events": [
+                "CT2024"
+            ],
+            "urls": [
+                "https://www.usc.gal/regaca/ct2024/"
+            ]
+        },
+        {
+            "id": "cscat2024",
+            "date": "2024-03",
+            "titles": [
+                "Formal accessibility in a virtual equipment"
+            ],
+            "events": [
+                "CSCAT2024",
+                "理論計算機科学と圏論ワークショップ (CSCAT2024)"
+            ],
+            "urls": [
+                "https://sites.google.com/faculty.gs.chiba-u.jp/cscat2024/home"
+            ]
+        },
+        {
+            "id": "algebra-young-2024",
+            "date": "2024-02",
+            "titles": [
+                "Universal algebra over locally presentable categories"
+            ],
+            "events": [
+                "Gathering for Young Researchers on Algebra 2024",
+                "第28回代数学若手研究会"
+            ],
+            "urls": [
+                "https://sites.google.com/view/daisuuwakate2023"
+            ]
+        },
+        {
+            "id": "logic-young-2023",
+            "date": "2023-11",
+            "titles": [
+                "Monads, partial algebras, and partial logic"
+            ],
+            "events": [
+                "Gathering for Young Researchers on Mathematical Logic 2023",
+                "数学基礎論若手の会2023"
+            ],
+            "urls": [
+                "https://sites.google.com/view/mlwakatenokai2023"
+            ]
+        },
+        {
+            "id": "msj2023-autumn",
+            "date": "2023-09",
+            "titles": [
+                "Birkhoff's variety theorem for relative algebraic theories"
+            ],
+            "events": [
+                "MSJ2023 Autumn Meeting",
+                "日本数学会2023年度秋季総合分科会"
+            ],
+            "urls": [
+                "https://www.mathsoc.jp/en/meeting/tohoku23sept/index.html",
+                "https://www.mathsoc.jp/activity/meeting/tohoku23sept/"
+            ]
+        },
+        {
+            "id": "ct2023",
+            "date": "2023-07",
+            "titles": [
+                "Birkhoff's variety theorem for relative algebraic theories"
+            ],
+            "events": [
+                "CT2023"
+            ],
+            "urls": [
+                "https://sites.uclouvain.be/ct2023/"
+            ]
+        },
+        {
+            "id": "cscat2023",
+            "date": "2023-03",
+            "titles": [
+                "Finitary Monads on LFP Categories and Birkhoff's Variety Theorem"
+            ],
+            "events": [
+                "CSCAT2023",
+                "理論計算機科学と圏論ワークショップ (CSCAT2023)"
+            ],
+            "urls": [
+                "https://sites.google.com/view/cscat2023/home"
+            ]
+        }
+    ],
+    "notes": [
+        {
+            "id": "walking-parallel-pair",
+            "urls": [
+                "./notes/walkingParallelPair-siftedColim.pdf"
+            ]
+        },
+        {
+            "id": "origin-category",
+            "urls": [
+                "./notes/OriginCategory.pdf"
+            ]
+        },
+        {
+            "id": "fp-terminal",
+            "urls": [
+                "./notes/FPTerminal.pdf"
+            ]
+        },
+        {
+            "id": "commuting-limits-colimits",
+            "urls": [
+                "./notes/CommLimColim.pdf"
+            ]
+        },
+        {
+            "id": "intro-categorical-universal-algebra",
+            "urls": [
+                "./notes/IntroCatUnivalg.pdf"
+            ]
+        },
+        {
+            "id": "group-gumm",
+            "urls": [
+                "./notes/GroupGumm.pdf"
+            ]
+        },
+        {
+            "id": "regular-category",
+            "urls": [
+                "./notes/RegularCat.pdf"
+            ]
+        },
+        {
+            "id": "cat-smcc",
+            "urls": [
+                "./notes/smcc_str_JP.pdf"
+            ]
+        }
+    ]
+}

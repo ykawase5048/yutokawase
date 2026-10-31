@@ -1,6 +1,7 @@
 {
     "talks": [
         {
+            "id": "virtual-double-categories-2026",
             "title": "Double categories of profunctors",
             "date": "2026-11",
             "isOnline": true,
@@ -22,6 +23,7 @@
             ]
         },
         {
+            "id": "categories-in-tokyo-3",
             "title": "Cocompletion under sifted colimits need not be finitely accessible",
             "date": "2026-11",
             "city": {
@@ -53,6 +55,7 @@
             ]
         },
         {
+            "id": "ct2026",
             "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
             "date": "2026-07",
             "isOnline": true,
@@ -75,6 +78,7 @@
             ]
         },
         {
+            "id": "msj2026-annual",
             "title": "On the iterated analogue of the fundamental theorem of homomorphisms",
             "date": "2026-03",
             "city": {
@@ -109,6 +113,7 @@
             ]
         },
         {
+            "id": "categories-in-tokyo-2",
             "title": "On the iterated analogue of the fundamental homomorphism theorem",
             "date": "2026-02",
             "city": {
@@ -145,6 +150,7 @@
             ]
         },
         {
+            "id": "cscat2025",
             "title": "Double categories of profunctors",
             "date": "2025-03",
             "city": {
@@ -176,6 +182,7 @@
             ]
         },
         {
+            "id": "kyoto-category-theory-2025",
             "title": "On the decomposition of a strong epimorphism into regular epimorphisms",
             "date": "2025-02",
             "city": {
@@ -205,6 +212,7 @@
             ]
         },
         {
+            "id": "categories-in-tokyo-1-research",
             "title": "Universal algebra over locally presentable categories",
             "date": "2024-11",
             "city": {
@@ -238,6 +246,7 @@
             ]
         },
         {
+            "id": "categories-in-tokyo-1-lecture",
             "title": "Introduction to categorical universal algebra (short lecture)",
             "date": "2024-11",
             "city": {
@@ -267,6 +276,7 @@
             ]
         },
         {
+            "id": "ct2024",
             "title": "Formalizing accessibility and duality in a virtual equipment",
             "date": "2024-06",
             "city": {
@@ -298,6 +308,7 @@
             ]
         },
         {
+            "id": "cscat2024",
             "title": "Formal accessibility in a virtual equipment",
             "date": "2024-03",
             "city": {
@@ -327,6 +338,7 @@
             ]
         },
         {
+            "id": "algebra-young-2024",
             "title": "Universal algebra over locally presentable categories",
             "date": "2024-02",
             "city": {
@@ -360,6 +372,7 @@
             ]
         },
         {
+            "id": "logic-young-2023",
             "title": "Monads, partial algebras, and partial logic",
             "date": "2023-11",
             "city": {
@@ -393,6 +406,7 @@
             ]
         },
         {
+            "id": "msj2023-autumn",
             "title": "Birkhoff's variety theorem for relative algebraic theories",
             "date": "2023-09",
             "city": {
@@ -429,6 +443,7 @@
             ]
         },
         {
+            "id": "ct2023",
             "title": "Birkhoff's variety theorem for relative algebraic theories",
             "date": "2023-07",
             "city": {
@@ -463,6 +478,7 @@
             ]
         },
         {
+            "id": "cscat2023",
             "title": "Finitary Monads on LFP Categories and Birkhoff's Variety Theorem",
             "date": "2023-03",
             "city": {

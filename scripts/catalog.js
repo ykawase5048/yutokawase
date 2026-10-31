@@ -117,7 +117,7 @@ export function startCatalog(type) {
         return article;
     }
     function talkEntry(talk) {
-        const { article, metadata, actions, links } = entryShell(talk.date.slice(0, 4), talk.title);
+        const { article, metadata, actions, links } = entryShell(talk.date.slice(0, 4), talk.title, `talk-${talk.id}`);
         metadata.append(el('p', 'entry-meta', talkMetadata(talk, getLanguage())));
         const eventName = localText(talk.event);
         const eventUrl = localText(talk['event-url']);
@@ -146,7 +146,7 @@ export function startCatalog(type) {
         return article;
     }
     function noteEntry(note) {
-        const { article, metadata, actions, links, heading } = entryShell(note.date.slice(0, 4), '');
+        const { article, metadata, actions, links, heading } = entryShell(note.date.slice(0, 4), '', `note-${note.id}`);
         heading.append(externalLink(note.title, note.url));
         metadata.append(el('p', 'entry-meta', `${formatDate(note.date, getLanguage())} · ${t(note.language === 'ja' ? 'inJapanese' : 'inEnglish')}`));
         links.append(resourceLinks([{ type: 'pdf', link: note.url }]));
@@ -198,16 +198,27 @@ export function startCatalog(type) {
         markHashTarget(false);
     }
     function markHashTarget(scroll) {
-        if (type !== 'papers' || !data) return;
-        const key = paperKeyFromHash(location.hash, data.papers, data.legacyAnchors);
-        if (!key) return;
-        let target = document.getElementById(`paper-${key}`);
-        if (!target && scroll) {
-            selectedTag = '';
-            render();
-            target = document.getElementById(`paper-${key}`);
+        if (!data) return;
+        let id;
+        if (type === 'papers') {
+            const key = paperKeyFromHash(location.hash, data.papers, data.legacyAnchors);
+            if (key) id = `paper-${key}`;
+        } else {
+            let hash;
+            try { hash = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+            const prefix = type === 'talks' ? 'talk-' : 'note-';
+            if (data[type].some(entry => `${prefix}${entry.id}` === hash)) id = hash;
         }
         root.querySelectorAll('.anchor-target').forEach(element => element.classList.remove('anchor-target'));
+        if (!id) return;
+        let target = document.getElementById(id);
+        if (!target && scroll) {
+            selectedTag = '';
+            selectedPaper = '';
+            writeTalkFilters(true);
+            render();
+            target = document.getElementById(id);
+        }
         target?.classList.add('anchor-target');
         if (scroll && target) requestAnimationFrame(() => {
             target.scrollIntoView({ block: 'start' });
