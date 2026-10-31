@@ -4,6 +4,7 @@ export const translations = {
     en: {
         home: 'Home', paper: 'Papers', talk: 'Talks & Slides', notes: 'Notes', cv: 'CV', misc: 'Miscellaneous',
         menu: 'Menu', language: 'Language', navigation: 'Main navigation', skip: 'Skip to content',
+        lastUpdated: 'Last updated:',
         name: 'Yuto Kawase',
         role: 'Ph.D. student, JSPS Research Fellow (<a href="https://www.jsps.go.jp/english/e-pd/" target="_blank" rel="noopener noreferrer">DC1</a>) from April 2024',
         affiliation: 'Research Institute for Mathematical Sciences (<a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank" rel="noopener noreferrer">RIMS</a>), Kyoto University, Japan',
@@ -45,6 +46,7 @@ export const translations = {
     ja: {
         home: 'ホーム', paper: '論文', talk: '講演・スライド', notes: 'ノート', cv: '経歴', misc: 'その他',
         menu: 'メニュー', language: '言語', navigation: 'メインナビゲーション', skip: '本文へ移動',
+        lastUpdated: '最終更新日：',
         name: '河瀬 悠人',
         role: '博士後期課程学生・日本学術振興会特別研究員(<a href="https://www.jsps.go.jp/j-pd/" target="_blank" rel="noopener noreferrer">DC1</a>、2024年4月より)',
         affiliation: '京都大学 数理解析研究所(<a href="https://www.kurims.kyoto-u.ac.jp/ja/index.html" target="_blank" rel="noopener noreferrer">RIMS</a>)',

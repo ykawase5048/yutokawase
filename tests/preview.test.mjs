@@ -9,6 +9,10 @@ test('HTTP preview resolves all clean routes, assets, legacy paths and unknown p
     await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
     t.after(() => server.close());
     const base = `http://127.0.0.1:${server.address().port}`;
+    const metadata = await fetch(base, { method: 'HEAD' });
+    assert.equal(metadata.status, 200);
+    assert.equal(metadata.headers.get('last-modified'), fs.statSync(new URL('../index.html', import.meta.url)).mtime.toUTCString());
+    assert.equal(await metadata.text(), '');
     for (const page of ['index', 'paper', 'talk', 'notes', 'cv', 'misc']) {
         for (const lang of ['en', 'ja']) {
             const route = page === 'index' ? '/' : `/${page}`;
